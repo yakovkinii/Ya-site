@@ -1,0 +1,263 @@
+/* html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+} */
+*{
+    user-select: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#sch{
+    /* Photo by Miguel Á. Padriñán from Pexels */
+    background-image: url("pexels.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+/* FlexRowContainer */
+.frc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* FlexColumnContainer */
+.fcc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Border */
+/* .bor {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(150, 150, 150, 0.2);
+} */
+
+.bor2 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999;
+}
+
+/* Round edges */
+.round {
+    border-radius: 20px;
+}
+
+.round2 {
+    border-radius: 10px;
+}
+
+.round3 {
+    border-radius: 5px;
+}
+
+.mar5{
+    margin: 5px;
+}
+
+.scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+} 
+
+.scroll {
+	overflow: auto;
+}
+
+.js1 .day {
+    background-color: #eee;
+    width: 40px;
+    line-height: 40px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bbb;
+    font-size: large; 
+    color: black;
+    font-weight: bold;
+}
+
+.js1 .daypast {
+    background-color: #aaa;
+}
+
+.js1 .daycurrent {
+    background-color: #fff;
+    color: darkblue;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: darkblue;
+}
+
+.js1 .dayselected {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: x-large; 
+
+}
+
+.js1 .number-cont {
+    margin: 1px;
+    width: 2px;
+    justify-content: start;
+    align-items: center;
+}
+
+.js1 .number {
+    text-align: center;
+    user-select: none;
+    font-size: large;
+    font-family: Comic Sans MS;
+}
+
+.js1 .block4 {
+    flex-grow: 1;
+    max-width: 50px;
+    gap: 0px;
+    justify-content: center;
+}
+
+.js1 .stick {
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 2px;
+    height: 20px;
+}
+
+.js1 .taskDefault{ 
+    background-color: #eee;
+    border-width: 2px;
+    border-color: #bbb;
+    border-style: solid;
+}
+
+.js1 .past {
+    border-width: 2px;
+    border-color: #bbb;
+    border-style: solid;
+}
+
+.js1 .taskScheduled{
+    background-color: #faa;
+    border-width: 2px;
+    border-color: #faa;
+    border-style: solid;
+}
+
+.js1 .taskCompleted{ 
+    background-color: #afa;
+    border-width: 2px;
+    border-color: #afa;
+    border-style: solid;
+}
+
+.js1 .future {
+    border-width: 2px;
+    border-color: #bbb;
+    border-style: solid;
+}
+
+
+.js1 .past {
+    background-color: #aaa;
+}
+
+.js1 .stickselected {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
+.js1 .stick-spacer {
+    flex-grow: 1;
+    width: 2px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.tasks-cont {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.tasks {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 3px 1px rgba(100,100,100, 0.1);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    justify-content: start;
+}
+
+.js3 .selected-today{
+    border-style: none none solid none;
+}
+
+.js3 .task {
+    width: 95%;
+    padding: 5px;
+}
+
+.js3 .caption {
+    font-weight: normal;
+}
+
+.js3 .completed {
+    color: rgb(35, 189, 35);
+}
+
+.js3 .c1 {
+    justify-content: start;
+    width: 95%;
+    user-select: none;
+}
+
+.js3 .c2 {
+    justify-content: start;
+    gap: 0;
+    user-select: none;
+}
+
+.js3 .c3 {
+    justify-content: start;
+    gap: 0;
+    user-select: none;
+}
+
+.js3 .done {
+    text-decoration: line-through;
+    color: green;
+}
+
+.js3 .hidden{
+    display: none;
+}
+
+
+
+

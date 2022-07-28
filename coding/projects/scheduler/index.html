@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" style="
+height: 100%;
+overflow: hidden;
+">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Scheduler - Ivan Yakovkin</title>
+    <meta name="author" content="Ivan Yakovkin. Scheduler" />
+    <meta name="description" content="Ivan I. Yakovkin's personal website. Scheduler project webpage">
+    <meta name="Keywords" content="Ivan I. Yakovkin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="../../../">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="coding/projects/scheduler/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="coding/projects/scheduler/script.js" defer></script>
+
+</head>
+
+<body style="
+height: 100%;
+overflow: hidden;
+">
+    <main style="
+    height: 100%;
+    overflow: hidden;
+    ">
+        <div id="menu-bar" class="shadow thinborder">
+            <a id="photo" href="./"><img id="profile_pic" class="border" src="media/profile.jpg"></a>
+            <div id="name">Ivan Yakovkin</div>
+            <a href="about/" class="menu-item border darkcenterfontsmall"
+                style="background: rgba(255, 0, 255, 0.2); grid-area: menu1;">
+                <p>About</p>
+            </a>
+            <a href="physics/" class="menu-item border darkcenterfontsmall"
+                style="background: rgba(0, 255, 0, 0.2); grid-area: menu2;">
+                <p>Physics</p>
+            </a>
+            <a href="coding/" class="menu-item border darkcenterfontsmall"
+                style="background: rgba(0, 0, 255, 0.2); grid-area: menu3;">
+                <p>Coding</p>
+            </a>
+        </div>
+
+        <div id="title" class="shadow thinborder" style="background: rgba(180,180,255,0.5);">
+            <h1 class="darkcenterfont upper titleh1">Scheduler project</h1>
+            <div class="darkcenterfontsmall">Plan your day for efficient time usage (Currently desktop only)</div>
+        </div>
+
+        <div id="content" style="
+        height: 100%;
+        overflow: hidden;
+        margin-top: 5px;
+        ">
+            <!-- <div class="plaintext generalfont shadow thinborder">
+                <div class="darkcenterfontsmall upper">[this page is under construction]</div>
+            </div> -->
+            <div id="sch" class="fcc shadow" onmouseup="bodyMouseUp()" style="
+height: 100%;
+justify-content: center;
+overflow: hidden;
+border-radius: 20px;
+">
+                <div class="fcc" style="
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    padding: 20px;
+    border-radius: 40px;
+    height: 90%;
+    /* -ms-overflow-style: none; 
+    scrollbar-width: none;  */
+    overflow: hidden;
+    ">
+
+                    <div class="fcc js1" style="
+        width: 100%;
+        ">
+                        <div class="frc" style="
+            width: 100%;
+            justify-content: space-between;
+            ">
+                            <div class="frc bor round js-time" style="
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 2px 2px 3px 1px rgba(100,100,100, 0.1);
+                padding: 5px 10px;
+                font-family:  Comic Sans MS;
+                font-size: x-large;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                ">19:19</div>
+                            <div class="frc js-days bor round" style="
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 2px 2px 3px 1px rgba(100,100,100, 0.1);
+                padding: 5px 10px;
+                "></div>
+                            <div class="frc bor round js-date" style="
+                background-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 2px 2px 3px 1px rgba(100,100,100, 0.1);
+                padding: 5px 10px;
+                font-family:  Comic Sans MS;
+                font-size: large;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 120px;
+                gap:0;
+                ">
+                                <div style="margin: 0;">Monday</div>
+                                <div style="margin: 0;">09 Jan</div>
+                            </div>
+                        </div>
+
+                        <div class="frc js-hours bor round" style="
+            background-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 2px 2px 3px 1px rgba(100,100,100, 0.1);
+            justify-content: center;
+            gap: 1px;
+            width: 95%;
+            padding: 10px 20px;
+            "></div>
+                    </div>
+
+                    <div class="frc" style="
+        width: 100%;
+        flex:1;
+        align-items: flex-start;
+        overflow: hidden;
+        ">
+                        <div class="tasks-cont scroll">
+                            <div class="fcc js2 tasks" style="
+                gap: 2px;
+                ">
+                                <div class="mar5" style="height:28px;">
+                                    <div style='
+                        font-family:  Comic Sans MS;
+                        font-size: large;
+                        '>
+                                        ADD NEW TASK
+                                    </div>
+                                </div>
+                                <input class="js-caption mar5" type="text" placeholder="Task"
+                                    onkeypress="newTaskKeyPress(event)" style="
+                        border-radius: 10px;
+                        padding: 2px;
+                        ">
+                                <div class="frc mar5" style="
+                    align-items: baseline;
+                    ">
+                                    <div>Estimated time:</div>
+                                    <input class="js-time" type="number" min="1" max="100" value="1" style="
+                        width: 32px;
+                        border-radius: 10px;
+                        padding: 2px;
+                        ">
+                                </div>
+                                <button class='js-submit mar5' onclick="submitTask()" style="
+                    border-radius: 10px;
+                    padding: 10px;
+                    ">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="tasks-cont scroll" onmouseleave="this.scroll({top:0,behavior:'smooth'});">
+                            <div class="fcc js3 tasks">
+                                <div style="height:28px;">
+                                    <div style='
+                        font-family:  Comic Sans MS;
+                        font-size: large;
+                        '>
+                                        TODAY
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tasks-cont scroll" onmouseleave="this.scroll({top:0,behavior:'smooth'});">
+                            <div class="fcc js4 tasks">
+                                <div style="height:28px;">
+                                    <div style='
+                        font-family:  Comic Sans MS;
+                        font-size: large;
+                        '>
+                                        THIS WEEK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tasks-cont scroll" onmouseleave="this.scroll({top:0,behavior:'smooth'});">
+                            <div class="fcc js5 tasks">
+                                <div style="height:28px;">
+                                    <div style='
+                        font-family:  Comic Sans MS;
+                        font-size: large;
+                        '>
+                                        THIS MONTH
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button onclick="deleteCache()">DELETE ALL TASKS</button> -->
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
