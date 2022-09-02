@@ -12,71 +12,47 @@
     <base href="./">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/yy.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EC1MWLEHK2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-EC1MWLEHK2');
-    </script> -->
 </head>
 
 <body>
-    <main>
-        <div id="row1">
-            <a id="photo" href="./"><img id="profile_pic" class="border shadow" src="media/profile.jpg"
-                    alt="Ivan I. Yakovkin profile picture"></a>
+    <main class="yys-wbp-hbc yycc">
+        <div id="card" class="yysbp">
+            <a id="photo" href="index.html" draggable="false"><img id="profile_pic" class="border shadow" src="media/profile.jpg"
+                    alt="Ivan I. Yakovkin profile picture" draggable="false"></a>
             <h1 id="name">Ivan I. Yakovkin</h1>
-            <div id="info" class="generalfontlarger">
-                <div><i class="fab fa-telegram-plane"></i> <a href="https://t.me/ioann_emi"
-                        target="_blank">@ioann_emi</a></div>
-                <div><i class="fab fa-github"></i> <a href="https://github.com/EmixD" target="_blank">EmixD</a></div>
-                <div><i class="far fa-envelope"></i> yakovkinii@gmail.com</div>
-                <div><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Ivan-Yakovkin-2"
+            <div id="info" class="generalfontlarger" style="color: black;">
+                <div><i class="fab fa-telegram-plane"></i> <a href="https://t.me/yakovkinii" class="nodecoration" style="color: black;"
+                        target="_blank">yakovkinii</a></div>
+                <div><i class="far fa-envelope" class="nodecoration" style="color: black;"></i> <a href="mailto:yakovkinii@gmail.com" class="nodecoration" style="color: black;" 
+                    target="_blank">yakovkinii@gmail.com</a></div>
+                <div><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Ivan-Yakovkin-2" class="nodecoration" style="color: black;"
                         target="_blank">Ivan I. Yakovkin</a></div>
             </div>
-        </div>
-        <div id="row2">
-            <div id="menu">
-                <a href="about/" class="menu-item border darkcenterfont shadow"
-                    style="background: rgba(255, 100, 255, 0.5);">
-                    About
+            <div id="menu" class="yysbp">
+                <a href="about/index.html" style="text-decoration: none;" draggable="false">
+                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+                        style="background: rgba(230, 230, 230, 0.8);">
+                        About
+                    </div>
                 </a>
-                <a href="physics/" class="menu-item border darkcenterfont shadow"
-                    style="background: rgba(100, 255, 100, 0.5);">
-                    Physics
+                <a href="publications/index.html" style="text-decoration: none;" draggable="false">
+                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+                        style="background: rgba(230, 230, 230, 0.8);">
+                        Publications
+                    </div>
                 </a>
-                <a href="coding/" class="menu-item border darkcenterfont shadow"
-                    style="background: rgba(100, 100, 255, 0.5);">
-                    Coding
+                <a href="index.html" class="yynoselect" style="text-decoration: none;" draggable="false">
+                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+                        style="background: rgba(230, 230, 230, 0.8);">
+                        Materials
+                    </div>
                 </a>
             </div>
         </div>
-        <div id="row3">
-            <div class="cont plaintext shadow thinborder">
-                <div class="capt darkcenterfont">Skills:</div>
-                <div class="list darkcenterfont">
-                    Physics<br>
-                    Maths<br>
-                    Programming<br>
-                    Simulations
-                </div>
-            </div>
-            <div class="cont plaintext shadow thinborder">
-                <div class="capt darkcenterfont">Interests:</div>
-                <div class="list darkcenterfont">
-                    Volleyball<br>
-                    Chess<br>
-                    Table&nbsp;Tennis<br>
-                    Japanese
-                </div>
-            </div>
-        </div>
+
     </main>
 </body>
 

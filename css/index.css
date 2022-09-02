@@ -1,28 +1,29 @@
-#row1{
-    margin-top: 20px;
+#card{
+    margin: 50px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto 230px;
     grid-template-rows: auto 50px;
     grid-template-areas:
-        "photo info"
-        "photo name";
+        "photo info menu"
+        "photo name menu";
 }
 
 #photo{
     grid-area: photo;
     align-self: center;
     justify-self: right;
+    margin-right: 10px;
 }
 
-#profile_pic {
+#profile_pic{
     border-radius: 30%;
     width: 200px;
     height: 200px;
 }
-#profile_pic:hover{
+/* #profile_pic:hover{
     border-color: #777;
-}
+} */
 
 #name{
     grid-area: name;
@@ -33,40 +34,40 @@
     font-size: 32pt;
     font-weight: bolder;
     color: blue;
+    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #info{
     grid-area: info;
     align-self: flex-end;
     justify-self: left;
-}
-
-#row2{
-    margin-top: 20px;
+    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #menu{
+    grid-area: menu;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-self: left;
+    justify-content: space-evenly;
 }
 
 .menu-item{
     align-self: center;
     justify-self: center;
 
-    width: 200px;
+    width: 230px;
+    height: 55px;
 
-    padding: 40px;
+    padding: 5px;
 
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .menu-item:hover{
-    border-color: #777;
+    border-color: #fff;
 }
 
 #row3{
@@ -108,6 +109,9 @@
             "photo"
             "name"
             "info";
+    }
+    #row2{
+        max-width: 500px;
     }
     #name{
         justify-self: center;

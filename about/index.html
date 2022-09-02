@@ -10,40 +10,98 @@
     <meta name="Keywords" content="Ivan I. Yakovkin, about">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="../">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/yy.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 
-<body>
-    <main>
-        <div id="menu-bar" class="shadow thinborder">
-            <a id="photo" href="./"><img id="profile_pic" class="border" src="media/profile.jpg"></a>
-            <div id="name">Ivan Yakovkin</div>
-            <a href="about/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(255, 0, 255, 0.2); grid-area: menu1;">
-                <p>About</p>
-            </a>
-            <a href="physics/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(0, 255, 0, 0.2); grid-area: menu2;">
-                <p>Physics</p>
-            </a>
-            <a href="coding/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(0, 0, 255, 0.2); grid-area: menu3;">
-                <p>Coding</p>
-            </a>
-        </div>
 
-        <div id="title" class="shadow thinborder" style="background: rgba(255,180,255,0.5);">
-            <!-- <div class="darkcenterfont upper">About me</div> -->
-            <h1 class="darkcenterfont upper titleh1">About me</h1>
-            <div class="darkcenterfontsmall">My bio, my hobbies, my achievements</div>
+<body>
+    <main class="yys-wbp-hbc">
+        <div class="header">
+            <div class="menu-container yysbc yynoselect">      
+                <div class="menu yysbc yynoselect">
+                    <a href="index.html" style="text-decoration: none;" draggable="false">
+                        <div class="menu-item yynoselect">Ivan I. Yakovkin</div>
+                    </a>
+                    <div class="menu-angle yynoselect"><i class="fa fa-angle-right"></i></div>
+                    <a href="about/index.html" style="text-decoration: none;" draggable="false">
+                        <div class="menu-item yynoselect">About</div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="title yysbp">
+                <div class="yysbc">
+                    About
+                </div>
+            </div>
         </div>
         
-        <div id="content">
-            <div class="plaintext generalfont shadow thinborder">
-                <h4 class="upper">Education</h4>
+
+        <div class="content yys-wbp-hbc yycc">
+            <div class="plaintext generalfont" style="margin: 20px;">
+                <!-- <div style="font-size: 24px; text-align: center;">Solid State Physics</div> -->
+                <div style="width: 100%; overflow: auto;">
+                    <table>
+                        <!-- <tr>
+                            <th>#</th>
+                            <th>Authors</th>
+                            <th>Title</th>
+                            <th>Jounal</th>
+                        </tr> -->
+                        <tr>
+                            <td>
+                                <div style="text-align: justify;">
+                                    Ivan I. Yakovkin is a PhD student in theoretical physics and a software developer with the following areas of professional interest: 
+                                </div>
+                                <ul>
+                                    <li>
+                                        Physics (Solar Physics, Liquid Crystal Physics, Solid State Physics)
+                                    </li>
+                                    <li>
+                                        Software Developement (Python, Machine Learning)
+                                    </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="plaintext" style="max-width: 1200px;">
+                <div style="text-align: justify;">
+                    Ivan I. Yakovkin is a PhD student in theoretical physics and a software developer with the following areas of professional interest: 
+                </div>
+                <ul>
+                    <li>
+                        Physics (Solar Physics, Liquid Crystal Physics, Solid State Physics)
+                    </li>
+                    <li>
+                        Software Developement (Python, Machine Learning)
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Education</div>
                 <div style="text-align: justify;">
                     Faculty of Physics, Taras Shevchenko
                     National University of Kyiv, specialty "Quantum computers, computing and information":
@@ -67,8 +125,7 @@
                         2010 &mdash; graduated with honours
                     </li>
                 </ul>
-
-                <h4 class="upper">Certification</h4>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Certification</div>
                 <ul>
                     <li>
                         2017 &mdash; Japanese-Language Proficiency Test (N5)
@@ -82,26 +139,64 @@
                         on "JavaScript Algorithms and Data Structures"
                     </li>
                 </ul>
-
-                <h4 class="upper">Hobbies</h4>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Hobbies</div>
                 <ul>
                     <li>
-                        Playing volleyball in local amatour teams (since 2009)
+                        Volleyball
                     </li>
                     <li>
-                        Learning Japanese (since ~ 2011, with no rush)
+                        Japanese
                     </li>
                     <li>
-                        Coding (since 2011) and performing various numeric simulations (since 2015)
-                    </li>
-                    <li>
-                        Playing chess (~2200 rapid)
+                        Chess
                     </li>
                     <li>
                         Table tennis
                     </li>
                     <li>
-                        Playing musical instruments (piano, guitar) and singing
+                        Piano, guitar
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">General programming</div>
+                <ul>
+                    <li>
+                        Fortran, C++, Delphi &mdash; extensive practice in application to scientific calculations
+                    </li>
+                    <li>
+                        Python &mdash; experience with numpy, scipy, torch, pandas
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Web developement</div>
+                <ul>
+                    <li>
+                        HTML, css, JavaScript
+                    </li>
+                    <li>
+                        golang, Svelte + MySQL, MongoDB, Firebase  &mdash; pet projects
+                    </li>
+                    <li>
+                        Understanding of REST, http/https, etc.
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Numeric simulations</div>
+                <ul>
+                    <li>
+                        Direct simulations using C++, python, Maple, Wolfram Mathematica
+                    </li>
+                    <li>
+                        Simulation of complex systems in COMSOL
+                    </li>
+                    <li>
+                        Machine learning and parameter optimization using C++ and python
+                    </li>
+                </ul>
+                <div style="margin-top: 20px; font-size: 24px; text-align: center;">Game developement</div>
+                <ul>
+                    <li>
+                        Lua/Love2d, python/pygame, Unreal Engine &mdash; pet games
+                    </li>
+                    <li>
+                        Blender &mdash; in application to scientific data visualization
                     </li>
                 </ul>
             </div>
