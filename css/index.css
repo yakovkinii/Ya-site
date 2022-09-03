@@ -29,9 +29,10 @@
     align-self: center;
     justify-self: left;
 
-    text-transform: uppercase;
-    font-size: 32pt;
-    font-weight: bolder;
+    /* text-transform: uppercase; */
+    font-size: 34pt;
+    font-family: 'Merriweather';
+    font-weight: 400;
     color: blue;
     text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
