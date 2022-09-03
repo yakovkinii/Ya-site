@@ -10,100 +10,338 @@
     <meta name="Keywords" content="Ivan I. Yakovkin, about">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="../">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/yy.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
 
-<body>
-    <main>
-        <div id="menu-bar" class="shadow thinborder">
-            <a id="photo" href="./"><img id="profile_pic" class="border" src="media/profile.jpg"></a>
-            <div id="name">Ivan Yakovkin</div>
-            <a href="about/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(255, 0, 255, 0.2); grid-area: menu1;">
-                <p>About</p>
-            </a>
-            <a href="physics/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(0, 255, 0, 0.2); grid-area: menu2;">
-                <p>Physics</p>
-            </a>
-            <a href="coding/" class="menu-item border darkcenterfontsmall"
-                style="background: rgba(0, 0, 255, 0.2); grid-area: menu3;">
-                <p>Coding</p>
-            </a>
-        </div>
 
-        <div id="title" class="shadow thinborder" style="background: rgba(255,180,255,0.5);">
-            <!-- <div class="darkcenterfont upper">About me</div> -->
-            <h1 class="darkcenterfont upper titleh1">About me</h1>
-            <div class="darkcenterfontsmall">My bio, my hobbies, my achievements</div>
+<body>
+    <main class="yys-wbp-hbc">
+        <div class="header">
+            <div class="menu-container yysbc yynoselect">      
+                <div class="menu yysbc yynoselect">
+                    <a href="index.html" style="text-decoration: none;" draggable="false">
+                        <div class="menu-item yynoselect">Ivan I. Yakovkin</div>
+                    </a>
+                    <div class="menu-angle yynoselect"><i class="fa fa-angle-right"></i></div>
+                    <a href="about/index.html" style="text-decoration: none;" draggable="false">
+                        <div class="menu-item yynoselect">About</div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="title yysbp">
+                <div class="yysbc">
+                    About
+                </div>
+            </div>
         </div>
         
-        <div id="content">
-            <div class="plaintext generalfont shadow thinborder">
-                <h4 class="upper">Education</h4>
-                <div style="text-align: justify;">
-                    Faculty of Physics, Taras Shevchenko
-                    National University of Kyiv, specialty "Quantum computers, computing and information":
-                </div>
-                <ul>
-                    <li>
-                        2019 &mdash; Bachelor degree with honours
-                    </li>
-                    <li>
-                        2021 &mdash; Master degree with honours
-                    </li>
-                    <li>
-                        since 2021 &mdash; PhD Student
-                    </li>
-                </ul>
-                <div style="text-align: justify;">
-                    Music school №8, Kyiv:
-                </div>
-                <ul>
-                    <li>
-                        2010 &mdash; graduated with honours
-                    </li>
-                </ul>
 
-                <h4 class="upper">Certification</h4>
-                <ul>
-                    <li>
-                        2017 &mdash; Japanese-Language Proficiency Test (N5)
-                    </li>
-                    <li>
-                        2019 &mdash; English for professional activities (Natural Sciences) (C1).
-                    </li>
-                    <li>
-                        2021 &mdash; FreeCodeCamp <a
-                            href="https://www.freecodecamp.org/certification/yakovkinii/javascript-algorithms-and-data-structures" target="_blank">certificate</a>
-                        on "JavaScript Algorithms and Data Structures"
-                    </li>
-                </ul>
+        <div class="content yys-wbp-hbc yycc">
+            <div class="plaintext generalfont yysbp" style="margin: 20px;">
+                <!-- <div style="font-size: 24px; text-align: center;">Solid State Physics</div> -->
+                <div style="width: 100%; overflow: auto;">
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Education</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="flex-grow: 1;">
+                                    <div style="text-align: justify;">
+                                        Faculty of Physics, Taras Shevchenko
+                                        National University of Kyiv, specialty "Quantum computers, computing and information":
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            2019 &mdash; Bachelor degree with honours
+                                        </li>
+                                        <li>
+                                            2021 &mdash; Master degree with honours
+                                        </li>
+                                        <li>
+                                            since 2021 &mdash; PhD Student
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Music school №8, Kyiv:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            2010 &mdash; graduated with honours
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Certificates:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            2017 &mdash; Japanese-Language Proficiency Test (N5)
+                                        </li>
+                                        <li>
+                                            2019 &mdash; English for professional activities (Natural Sciences) (C1).
+                                        </li>
+                                        <li>
+                                            2021 &mdash; FreeCodeCamp <a
+                                                href="https://www.freecodecamp.org/certification/yakovkinii/javascript-algorithms-and-data-structures" target="_blank">certificate</a>
+                                            on "JavaScript Algorithms and Data Structures"
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div style="max-width: 40%;">
+                                    <img class="shadow" src="media/red.jpg" style="width:100%" alt="University" draggable="false">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Nematic Liquid Crystals</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="max-width: 30%;">
+                                    <img class="shadow" src="media/nlc.jpg" style="width:100%" alt="NLC" draggable="false">
+                                </div>      
+                                <div style="flex-grow: 1;">         
+                                    <div style="text-align: justify;">
+                                        Research scope:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            External electric / electromagnetic / magnetic fields
+                                        </li>
+                                        <li>
+                                            Finite anchoring energy
+                                        </li>
+                                        <li>
+                                            Easy axis gliding
+                                        </li>
+                                        <li>
+                                            Flexoelectric effect
+                                        </li>
+                                        <li>
+                                            Surface plasmon polariton propagation
+                                        </li>
+                                        <li>
+                                            Director field profiles
+                                        </li>
+                                        <li>
+                                            Threshold voltages
+                                        </li>
+                                        <li>
+                                            Time dynamics
+                                        </li>
+                                        <li>
+                                            Hysteresis criteria
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Analytical approaches:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Minimization of the free energy functional
+                                        </li>
+                                        <li>
+                                            Stability analysis
+                                        </li>
+                                        <li>
+                                            PDE analysis
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Numeric approaches:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Simulations in COMSOL
+                                        </li>
+                                        <li>
+                                            Development of custom applications (pyhon, Maple, Wolfram) 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Solar physics</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="flex-grow: 1;">
+                                    <div style="text-align: justify;">
+                                        Research scope:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Solar flares and prominences
+                                        </li>
+                                        <li>
+                                            Magnetic fields
+                                        </li>
+                                        <li>
+                                            Temperatures and turbulent velocities
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Approaches:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Analysis of Zeeman spectrograms
+                                        </li>
+                                        <li>
+                                            Analytical calculation of spectral line profiles
+                                        </li>
+                                        <li>
+                                            Software development for spectrum processing (Delphi, pytorch)
+                                        </li>
+                                        <li>
+                                            Development of custom applications (pyhon, C++) 
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div style="max-width: 45%;">
+                                    <img class="shadow" src="media/sun.png" style="width:100%" alt="NLC" draggable="false">
+                                </div>                                  
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Solid State Physics</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="max-width: 30%;">
+                                    <img class="shadow" src="media/leed.png" style="width:100%" alt="NLC" draggable="false">
+                                </div> 
+                                <div style="flex-grow: 1;">
+                                    <div style="text-align: justify;">
+                                        Research scope:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Adsorption on metal monocrystals
+                                        </li>
+                                        <li>
+                                            Low energy electron diffraction
+                                        </li>
+                                        <li>
+                                            Surface reconstruction
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Approaches:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Monte-Carlo simulations (fortran)
+                                        </li>
+                                        <li>
+                                            Software development for low energy electron diffraction patterns calculation (fortran, C++)
+                                        </li>
+                                    </ul>      
+                                </div>                          
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Software Development</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="flex-grow: 1;">
+                                    <div style="text-align: justify;">
+                                        Machine Learning in Finance:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            python (torch, numpy, scipy, pandas) 
+                                        </li>
+                                        <li>
+                                            MongoDB
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Custom software development in finance:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            python (numpy, pandas, numba, scipy, numexpr) 
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Miscellaneous:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            HTML, css, JavaScript
+                                        </li>
+                                        <li>
+                                            golang, Svelte, MongoDB, Firebase
+                                        </li>
+                                        <li>
+                                            Lua/Love2d, python/pygame, Unreal Engine 
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div style="max-width: 50%;">
+                                    <img class="shadow" src="media/vp.png" style="width:100%" alt="NLC" draggable="false">
+                                </div> 
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 20px; font-size: 24px; text-align: center;">Hobbies</div>
+                    <table class="yysbp">
+                        <tr>
+                            <td class="yycc" style="display: flex; flex-direction: row; gap: 50px;">
+                                <div style="max-width: 25%;">
+                                    <img class="shadow" src="media/volley.jpg" style="width:100%" alt="NLC" draggable="false">
+                                </div> 
+                                <div style="flex-grow: 1;">
+                                    <div style="text-align: justify;">
+                                        Activities:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Volleyball
+                                        </li>
+                                        <li>
+                                            Table tennis
+                                        </li>
+                                        <li>
+                                            Badminton
+                                        </li>
+                                        <li>
+                                            Chess
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Music:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Piano
+                                        </li>
+                                        <li>
+                                            Guitar
+                                        </li>
+                                    </ul>
+                                    <div style="text-align: justify;">
+                                        Learning:
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Japanese
+                                        </li>
 
-                <h4 class="upper">Hobbies</h4>
-                <ul>
-                    <li>
-                        Playing volleyball in local amatour teams (since 2009)
-                    </li>
-                    <li>
-                        Learning Japanese (since ~ 2011, with no rush)
-                    </li>
-                    <li>
-                        Coding (since 2011) and performing various numeric simulations (since 2015)
-                    </li>
-                    <li>
-                        Playing chess (~2200 rapid)
-                    </li>
-                    <li>
-                        Table tennis
-                    </li>
-                    <li>
-                        Playing musical instruments (piano, guitar) and singing
-                    </li>
-                </ul>
+                                    </ul>
+
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </main>

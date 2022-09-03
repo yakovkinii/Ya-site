@@ -1,7 +1,7 @@
 body {
     background-color: #8a8a8a;
-    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3) 80%, rgba(0, 0, 255, 0.1)), url("../media/background.png");
-    background-size: 100% 100%, 10px 10px;
+    background-image: linear-gradient(to right, rgba(230, 230, 230, 0.5), rgba(230, 230, 230, 0.5)), linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3) 80%, rgba(0, 0, 255, 0.1)), url("../media/background.png");
+    background-size: 100% 100%, 100% 100%, 10px 10px;
     font-family: "Libre Baskerville", serif; 
     font-weight: 400;
     color: #000;
@@ -17,7 +17,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #777;
+    border: 2px solid #eee;
     text-align: left;
     /* text-align: justify; */
     padding: 8px;
@@ -25,9 +25,8 @@ td, th {
 
 .border {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
     border-width: 4px;
-    border-color: #aaa;
+    border-color: #eee;
     border-style: solid;
 }
 
@@ -71,7 +70,7 @@ td, th {
     padding: 20px; 
 }
 .flexrowcont:hover{
-    border-color: #777;
+    border-color: #ccc;
 }
 
 .flexrowtext{
@@ -79,12 +78,11 @@ td, th {
 }
 
 .plaintext{
-    background: rgba(230, 230, 230, 0.8);
-    margin: 10px 0;
+    font-size: 20px;
     padding: 10px;
-    border-radius: 20px;
     text-align: justify;
-    font-family:     'Montserrat','Tahoma','Meiryo',sans-serif
+    font-family: 'Montserrat','Tahoma','Meiryo',sans-serif;
+    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .upper {
