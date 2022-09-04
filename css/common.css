@@ -1,7 +1,7 @@
 body {
-    background-color: #8a8a8a;
+    background-color: #eee;
     background-image: linear-gradient(to right, rgba(230, 230, 230, 0.5), rgba(230, 230, 230, 0.5)), linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3) 80%, rgba(0, 0, 255, 0.1)), url("../media/background.png");
-    background-size: 100% 100%, 100% 100%, 10px 10px;
+    background-size: 100% 100%, 100% 100%, 0.65vw 0.65vw;
     margin: 0;
 
     /* For debugging: */
@@ -13,67 +13,67 @@ body {
 /* FONTS */
 .font-body{
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 400;
     color: #000;
     text-align: justify;
 }
 .font-nav{
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 400;
     color: #000;
     text-align: left;
 }
 .font-paragraph-title{
     font-family: 'Open Sans';
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: 400;
     color: #000;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.3vw;
 }
 .font-page-title{
     text-transform: uppercase;
     font-family: 'Open Sans';
-    font-size: 24pt;
+    font-size: 2.1vw;
     font-weight: 400;
     color: #000;
     text-align: center;
 }
 .font-shadow{
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: -0.2vw 0.33vw 0.33vw rgba(0, 0, 0, 0.2);
 }
 
 
 table {
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.3);
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0.65vw;
+    margin-top: 0.65vw;
 }
 
 td, th {
-    border: 2px solid #eee;
+    border: 0.1vw solid #eee;
     text-align: left;
-    padding: 8px;
+    padding: 0.5vw;
 }
 
 .border {
     background: rgba(255, 255, 255, 0.1);
-    border-width: 4px;
+    border-width: 0.1vw;
     border-color: #eee;
     border-style: solid;
 }
 
 .thinborder{
-    border-width: 1px;
+    border-width: 0.06w;
     border-color: #aaa;
     border-style: solid;
 }
 
 .shadow{
-    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -0.2vw 0.3vw 0.3vw rgba(0, 0, 0, 0.1);
 }
 
 .nodecoration{
@@ -87,32 +87,32 @@ td, th {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px 20px;
-    margin: 10px auto;
+    gap: 0.3vw 1.3vw;
+    margin: 0.6vw auto;
 }
 
 .flexrowcont{
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 300px;
+    flex-basis: 23vw;
     
     background: rgba(230, 230, 230, 0.8);
-    padding: 20px; 
+    padding: 1.3vw; 
 }
 .flexrowcont:hover{
     border-color: #ccc;
 }
 
 .flexrowtext{
-    margin-top: 5px;
+    margin-top: 0.3vw;
 }
 
-@media (max-width:700px) {
+@media (max-width:0vw) {
     .border {
-        border-radius: 30px;
+        border-radius: 3vw;
     }
     .flexrowcont{
-        padding: 15px;
+        padding: 1.5vw;
     }
     #flexrow{
         max-width: 90%;
