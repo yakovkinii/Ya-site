@@ -15,6 +15,7 @@
     flex-direction: row;
     margin: 1.3vw 0.6vw 0vw 0.6vw;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 .nav-item{
     margin-right: 0.3vw;

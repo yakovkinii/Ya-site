@@ -107,14 +107,18 @@ td, th {
     margin-top: 0.3vw;
 }
 
-@media (max-width:0vw) {
-    .border {
-        border-radius: 3vw;
+@media (max-width:1000px){
+    /* FONTS */
+    .font-body{
+        font-size: 2.5vw;
     }
-    .flexrowcont{
-        padding: 1.5vw;
+    .font-nav{
+        font-size: 3vw;
     }
-    #flexrow{
-        max-width: 90%;
+    .font-paragraph-title{
+        font-size: 3vw;
+    }
+    .font-page-title{
+        font-size: 4vw;
     }
 }

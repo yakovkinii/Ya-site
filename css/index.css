@@ -104,11 +104,8 @@
         margin-top: 4vw;
     }
     .photo{
-        /* grid-area: photo; */
         align-self: center;
         justify-self: center;
-        /* margin-right: 0.1vw; */
-        /* border-radius: 30%; */
         width: 30vw;
         height: 30vw;
     }
