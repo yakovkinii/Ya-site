@@ -1,6 +1,2 @@
 - Update text shadows
-- Check SEO
-- Add to google console
-- Add to edge engine console 
-- Add meterials page
 - Add all the links
