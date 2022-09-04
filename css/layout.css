@@ -42,7 +42,9 @@
 .td-flex-text{
     flex-grow: 1;
 }
-
+.lmi1{
+    width: 45vw;
+}
 .lai1{
     width: 40%;
 }
@@ -62,9 +64,13 @@
     width: 25%;
 }
 
+
 @media (max-width:1000px){
     .nav-opt{
         display: none;
+    }
+    .lm1{
+        flex-direction: column-reverse;
     }
     .la1{
         flex-direction: column-reverse;
@@ -83,6 +89,9 @@
     }
     .la6{
         flex-direction: row;
+    }
+    .lmi1{
+        width: 80vw;
     }
     .lai1{
         width: 50%;
