@@ -12,7 +12,9 @@ body {
 ul {
     padding-left: 3vw;
 }
-
+h1{
+    margin: 0vw;
+}
 /* FONTS */
 .font-body{
     font-family: 'Open Sans';
