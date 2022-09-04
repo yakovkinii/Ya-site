@@ -1,4 +1,9 @@
-#card{
+/* LAYOUT */
+.index-main{
+    flex-direction: column; 
+    margin: 50px;
+}
+.card{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto 230px;
@@ -6,45 +11,27 @@
     grid-template-areas:
         "photo info menu"
         "photo name menu";
+    margin-bottom: 70px;
 }
-
-#photo{
+.photo{
     grid-area: photo;
     align-self: center;
     justify-self: right;
     margin-right: 10px;
-}
-
-#profile_pic{
     border-radius: 30%;
     width: 200px;
     height: 200px;
 }
-/* #profile_pic:hover{
-    border-color: #777;
-} */
-
-#name{
+.name{
     grid-area: name;
     align-self: center;
     justify-self: left;
-
-    /* text-transform: uppercase; */
-    font-size: 34pt;
-    font-family: 'Merriweather';
-    font-weight: 400;
-    color: blue;
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
-
-#info{
+.info{
     grid-area: info;
     align-self: flex-end;
-    justify-self: left;
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
 }
-
-#menu{
+.menu{
     grid-area: menu;
     display: flex;
     flex-direction: column;
@@ -52,7 +39,6 @@
     justify-self: left;
     justify-content: space-evenly;
 }
-
 .menu-item{
     align-self: center;
     justify-self: center;
@@ -61,44 +47,46 @@
     height: 55px;
 
     padding: 5px;
-
-    text-decoration: none;
-    text-transform: uppercase;
 }
-
 .menu-item:hover{
     border-color: #fff;
 }
 
-#row3{
-    margin: auto;
-    margin-top: 20px;
-    max-width: 735px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
-.cont{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 300px;
-    min-height: 100px;
-    background: rgba(230, 230, 230, 0.8);
-    padding: 20px;
+/* FONTS */
+.font-cursive{
+    font-family: 'Tangerine'; 
+    font-size: 60px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;    
 }
-
-.capt{
+.font-name{
+    font-family: 'Merriweather';
+    font-size: 34pt;
+    font-weight: 400;
+    color: blue;
+}
+.font-info{
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    justify-self: left;
+    color: black;
+}
+.font-menu-item{
     text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+    justify-self: left;
+    color: black;
 }
 
-.list{
-    margin-top: 5px;
-}
 
-@media (max-width:800px){
+
+
+/* @media (max-width:800px){
     #photo{
         justify-self: center;
     }
@@ -136,4 +124,4 @@
     #row3{
         max-width: 90%;
     }
-}
+} */

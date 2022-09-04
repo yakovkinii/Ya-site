@@ -7,42 +7,36 @@
         "menu title empty";
 }
 
-.menu-container{
+.nav-container{
     grid-area: menu;
 }
-.menu{
+.nav{
     display: flex;
     flex-direction: row;
     margin: 20px 10px 0px 10px;
     align-items: baseline;
 }
-.menu-item{
+.nav-item{
     margin-right: 5px;
-    color: #000;
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
-    font-size: 16pt;
-}
-.menu-angle{
-    margin-right: 5px;
-    color: #000;
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
-    font-size: 14pt;
-}
-.hr {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, #eee, #eee);
-    /* background-image: linear-gradient(to right, rgba(100, 100, 120), rgba(0, 0, 0, 0)); */
 }
 
 .title{
     grid-area: title;
-    text-transform: uppercase;
-    font-size: 24pt;
-    font-weight: bolder;
-    /* color: blue; */
-    text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.subcontent{
+    margin: 20px;
+}
+.subsubcontent{
+    width: 100%; 
+    overflow: auto;
+}
+.td-flex{
+    display: flex; flex-direction: row; gap: 50px;
+}
+.td-flex-text{
+    flex-grow: 1;
 }

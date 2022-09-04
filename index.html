@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="./">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -21,79 +22,48 @@
 </head>
 
 <body style="height: auto;">
-    <main class="yycc" style="flex-direction: column; margin: 50px;">
-        <div id="card" class="yys-wbp-hbc" style="margin-bottom: 70px;">
-            <a id="photo" href="index.html" draggable="false"><img id="profile_pic" class="border shadow" src="media/profile.jpg"
-                    alt="Ivan I. Yakovkin profile picture" draggable="false"></a>
-            <h1 id="name">Ivan I. Yakovkin</h1>
-            <div id="info" class="generalfontlarger" style="color: black;">
-                <div><i class="fab fa-telegram-plane"></i> <a href="https://t.me/yakovkinii" class="nodecoration" style="color: black;"
-                        target="_blank">yakovkinii</a></div>
-                <div><i class="far fa-envelope" class="nodecoration" style="color: black;"></i> <a href="mailto:yakovkinii@gmail.com" class="nodecoration" style="color: black;" 
-                    target="_blank">yakovkinii@gmail.com</a></div>
-                <div><i class="fab fa-researchgate"></i> <a href="https://www.researchgate.net/profile/Ivan-Yakovkin-2" class="nodecoration" style="color: black;"
-                        target="_blank">Ivan I. Yakovkin</a></div>
+    <main class="yycc index-main" >
+        <div class="yys-wbp-hbc card">
+            <img class="photo border shadow" src="media/profile.jpg" alt="Ivan I. Yakovkin profile picture" draggable="false">
+            <h1 class="name font-name">Ivan I. Yakovkin</h1>
+            <div class="info">
+                <div class="font-info">
+                    <i class="fab fa-telegram-plane"></i> 
+                    <a class="nodecoration" href="https://t.me/yakovkinii" target="_blank">yakovkinii</a>
+                </div>
+                <div class="font-info">
+                    <i class="far fa-envelope"></i> 
+                    <a class="nodecoration" href="mailto:yakovkinii@gmail.com" target="_blank">yakovkinii@gmail.com</a>
+                </div>
+                <div class="font-info">
+                    <i class="fab fa-researchgate"></i> 
+                    <a class="nodecoration" href="https://www.researchgate.net/profile/Ivan-Yakovkin-2" target="_blank">Ivan I. Yakovkin</a>
+                </div>
             </div>
-            <div id="menu" class="yysbp">
-                <a href="about/index.html" style="text-decoration: none;" draggable="false">
-                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+            <div class="yysbp menu">
+                <a class="nodecoration" href="about/index.html" draggable="false">
+                    <div class="menu-item font-menu-item border shadow yycc yynoselect"
                         style="background: rgba(230, 230, 230, 0.8);">
                         About
                     </div>
                 </a>
-                <a href="publications/index.html" style="text-decoration: none;" draggable="false">
-                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+                <a class="nodecoration" href="publications/index.html" draggable="false">
+                    <div class="menu-item font-menu-item border shadow yycc yynoselect"
                         style="background: rgba(230, 230, 230, 0.8);">
                         Publications
                     </div>
                 </a>
-                <a href="index.html" class="yynoselect" style="text-decoration: none;" draggable="false">
-                    <div class="menu-item border darkcenterfont shadow yycc yynoselect"
+                <a class="nodecoration" href="index.html" class="yynoselect" draggable="false">
+                    <div class="menu-item font-menu-item border shadow yycc yynoselect"
                         style="background: rgba(230, 230, 230, 0.8);">
                         Materials
                     </div>
                 </a>
             </div>
         </div>
-        <div class="yycc yysbp" style="font-size: 60px; font-family: 'Tangerine'; text-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);">
+        <div class="yycc yysbp font-cursive">
                 Theoretical physics & software development
-            <!-- <table class="yys-wbp-hbc" style="width: 850px;">
-                <tr>
-                    <td style="font-size: 20px;">
-                        <div style="text-align: justify;">
-                            PhD student in theoretical physics and a software developer.
-                        </div>
-                        <div style="text-align: justify;">
-                            Physics: 
-                        </div>
-                        <ul>
-                            <li>
-                                Solar Physics
-                            </li>
-                            <li>
-                                Liquid Crystal Physics
-                            </li>
-                            <li>
-                                Solid State Physics
-                            </li>
-
-                        </ul>
-                        <div style="text-align: justify;">
-                            Software Development: 
-                        </div>
-                        <ul>
-                            <li>
-                                Python
-                            </li>
-                            <li>
-                                Machine Learning
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table> -->
         </div>
-
     </main>
 </body>
 
