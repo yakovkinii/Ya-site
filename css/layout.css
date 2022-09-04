@@ -21,6 +21,7 @@
     margin-right: 0.3vw;
 }
 
+
 .title{
     grid-area: title;
     display: flex;
@@ -41,3 +42,4 @@
 .td-flex-text{
     flex-grow: 1;
 }
+
