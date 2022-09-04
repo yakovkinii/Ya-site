@@ -11,7 +11,7 @@
     grid-template-areas:
         "photo info menu"
         "photo name menu";
-    margin-bottom: 4.55vw;
+    margin-bottom: 6vw;
 }
 .photo{
     grid-area: photo;
@@ -51,12 +51,17 @@
 .menu-item:hover{
     border-color: #fff;
 }
+.cursive{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
 
 
 /* FONTS */
 .font-cursive{
     font-family: 'Tangerine'; 
-    font-size: 3.9vw;
+    font-size: 4vw;
     font-weight: 400;
     color: #000;
     text-align: center;    
@@ -86,85 +91,73 @@
 
 
 
-@media (max-width:0vw){
-    .index-main{
-        flex-direction: column; 
-        margin: 0.4vw;
-    }
+@media (max-width:1000px){
     .card{
         grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto 6vw auto;
         grid-template-areas:
             "photo info"
-            "name name"
+            "photo name"
             "menu menu";
         grid-gap: 1vw;
-        margin-bottom: 7vw;
+        margin-bottom: 15vw;
+        margin-top: 4vw;
     }
     .photo{
-        grid-area: photo;
+        /* grid-area: photo; */
         align-self: center;
         justify-self: center;
-        margin-right: 0.1vw;
-        border-radius: 30%;
-        width: 50vw;
-        height: auto;
+        /* margin-right: 0.1vw; */
+        /* border-radius: 30%; */
+        width: 30vw;
+        height: 30vw;
     }
-    .name{
-        justify-self: center;
-        font-size: 2.6vw;
-    }
-    .info{
-        align-self: center;
-        justify-self: center;
-    }
+    
     .menu{
-        gap: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vw;
+        gap: 3vw;
+        width: 100%;
     }
     .menu-item{
         width: auto;
         padding: 2vw;
         flex-shrink: 1;
         flex-basis: 20vw;
-
-        align-self: center;
-        justify-self: center;
     
-        width: 23vw;
-        height: 5.5vw;
+        width: 50vw;
+        height: 10vw;
     
         padding: 0.5vw;
     }
-
+    .cursive{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
 
 
     /* FONTS */
     .font-cursive{
-        font-family: 'Tangerine'; 
-        font-size: 6vw;
-        font-weight: 400;
-        color: #000;
-        text-align: center;    
+        font-size: 10vw;
     }
     .font-name{
         font-family: 'Merriweather';
-        font-size: 4.5vw;
+        font-size: 6vw;
         font-weight: 400;
         color: blue;
     }
     .font-info{
         font-family: 'Open Sans';
-        font-size: 1.6vw;
+        font-size: 4vw;
         font-weight: 400;
         justify-self: left;
         color: black;
     }
     .font-menu-item{
-        text-transform: uppercase;
-        font-family: 'Open Sans';
-        font-size: 2.4vw;
-        font-weight: 400;
-        justify-self: left;
+        font-size: 5vw;
         color: black;
     }
 }
