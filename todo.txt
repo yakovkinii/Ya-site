@@ -1,2 +1,2 @@
-- Update text shadows
 - Add all the links
+- Update text layout in tables

@@ -78,7 +78,7 @@ td, th {
 }
 
 .shadow{
-    box-shadow: -0.2vw 0.3vw 0.3vw rgba(0, 0, 0, 0.1);
+    box-shadow: -0.2vw 0.33vw 0.33vw rgba(0, 0, 0, 0.05);
 }
 
 .nodecoration{
