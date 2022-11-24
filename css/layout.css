@@ -45,6 +45,9 @@
 .lmi1{
     width: 45vw;
 }
+.lmi2{
+    width: 40vw;
+}
 .lai1{
     width: 40%;
 }
@@ -71,6 +74,9 @@
     }
     .lm1{
         flex-direction: column-reverse;
+    }
+    .lm1{
+        flex-direction: column;
     }
     .la1{
         flex-direction: column-reverse;
