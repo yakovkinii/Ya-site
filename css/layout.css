@@ -75,7 +75,7 @@
     .lm1{
         flex-direction: column-reverse;
     }
-    .lm1{
+    .lm2{
         flex-direction: column;
     }
     .la1{
@@ -98,6 +98,9 @@
     }
     .lmi1{
         width: 80vw;
+    }
+    .lmi2{
+        width: 70vw;
     }
     .lai1{
         width: 50%;
