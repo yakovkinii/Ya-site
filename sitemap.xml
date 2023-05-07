@@ -8,9 +8,9 @@
 
       <lastmod>2023-05-07</lastmod>
 
-      <changefreq>hourly</changefreq>
+      <changefreq>weekly</changefreq>
 
-      <priority>2.0</priority>
+      <priority>1.0</priority>
 
    </url>
    <url>
@@ -19,9 +19,9 @@
 
       <lastmod>2023-05-07</lastmod>
 
-      <changefreq>hourly</changefreq>
+      <changefreq>weekly</changefreq>
 
-      <priority>0.6</priority>
+      <priority>0.3</priority>
 
    </url>
     <url>
@@ -30,9 +30,9 @@
 
       <lastmod>2023-05-07</lastmod>
 
-      <changefreq>hourly</changefreq>
+      <changefreq>weekly</changefreq>
 
-      <priority>0.6</priority>
+      <priority>0.3</priority>
 
    </url>
        <url>
@@ -41,9 +41,9 @@
 
       <lastmod>2023-05-07</lastmod>
 
-      <changefreq>hourly</changefreq>
+      <changefreq>weekly</changefreq>
 
-      <priority>0.3</priority>
+      <priority>0.1</priority>
 
    </url>
 
