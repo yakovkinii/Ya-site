@@ -46,7 +46,7 @@
         <div class="content yys-wbp-hbc yycc">
             <div class="subcontent yysbp">
                 <div class="subsubcontent font-body">
-                    <div class="font-paragraph-title font-shadow">Education</div>
+                    <div class="font-paragraph-title font-shadow">Formal Education and Achievements</div>
                     <table class="yysbp shadow">
                         <tr>
                             <td class="la1 yycc td-flex">
@@ -61,6 +61,9 @@
                                         </li>
                                         <li>
                                             2021 &mdash; Master's degree with honors
+                                        </li>
+                                        <li>
+                                            2023 &mdash; taught an advanced course on numeric simulations in COMSOL
                                         </li>
                                         <li>
                                             Currently pursuing a PhD in the same field
@@ -178,35 +181,13 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            Magnetic fields in solar flares, prominences, and sunspots
+                                            Magnetic fields and Doppler velocities in solar flares, prominences, and sunspots
                                         </li>
                                         <li>
-                                            Modeling an inversion of Stokes profiles under non-LTE conditions
+                                            Modeling and inversion of Stokes profiles under non-LTE conditions
                                         </li>
                                     </ul>
-                                    <div>
-                                        Created software products:
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            Solar Radiative Transfer (SolRaT) &ndash; a modular cross-platform code for non-LTE Stokes synthesis and inversion 
-                                            for arbitrary magnetic fields (python, status: approaching MVP)
-                                        </li>
-                                        <li>
-                                            Virtual Photometer &ndash; a software for precise and semi-automated digitalization of spectral material captured on photo-plates. 
-                                            Virtual Photometer accounts for characteristic curves of both the scanner and the photoemulsion, performs data averaging, 
-                                            noise retraction, precise reference point selection, and many other features.
-                                            Virtual Photometer provides a powerful graphical user interface, is written in Delphi, and is fully integrated into data processing workflow.
-                                        </li>
-                                        <li>
-                                            Profile Manipulator &ndash; a solution for expedated processing, analysis, and visualization of spectral line profiles.
-                                            Profile Manipulator allows to interactively process large amounts of spectral data, combine and calculate derivative profiles while keeping track of the measurement errors.
-                                            Profile Manipulator is written in Delphi and is now an important part of the spectral processing workflow.
-                                        </li>
-                                        <li>
-                                            [TBD] &ndash; a Machine-Learning-based tool for semi-automated detection and restoration of contaminated spectral images (python, status: approaching MVP)
-                                        </li>
-                                    </ul>
+                                  
                                 </div>
                                 <div class="lai3">
                                     <img class="shadow" src="media/sun.png" style="width:100%" alt="Sun" draggable="false">
@@ -214,95 +195,61 @@
                             </td>
                         </tr>
                     </table>
-                    <div class="font-paragraph-title font-shadow">Solid State Physics</div>
+                    <div class="font-paragraph-title font-shadow">Software Development</div>
                     <table class="yysbp shadow">
                         <tr>
                             <td class="la4 yycc td-flex">
                                 <div class="lai4">
-                                    <img class="shadow" src="media/leed.png" style="width:100%" alt="LEED" draggable="false">
+                                    <img class="shadow" src="media/vp.png" style="width:100%" alt="Virtual Photometer" draggable="false">
                                 </div> 
                                 <div class="td-flex-text">
                                     <div>
-                                        Research Scope:
+                                        Experience in Finance:
                                     </div>
                                     <ul>
                                         <li>
-                                            Adsorption on metal monocrystals
+                                            Forward and swap rate prediction using Variational Autoencoders (pytorch, numpy, scipy, pandas, plotly)
                                         </li>
                                         <li>
-                                            Low energy electron diffraction
-                                        </li>
-                                        <li>
-                                            Surface reconstruction
+                                            Implemenation and support of stress testing models in Wholesale Credit Risk (numpy, pandas, pandera, numba, scipy, numexpr)
                                         </li>
                                     </ul>
                                     <div>
-                                        Approaches:
+                                        Created products:
                                     </div>
                                     <ul>
                                         <li>
-                                            Monte-Carlo simulations using FORTRAN
+                                            Solar Radiative Transfer (SolRaT) &ndash; a modular cross-platform code for non-LTE synthesis and inversion of Stokes profiles
+                                            for arbitrary magnetic fields (python, status: approaching MVP)
                                         </li>
                                         <li>
-                                            Software development for low energy electron diffraction pattern calculation using FORTRAN and C++
+                                            Virtual Photometer &ndash; a software for precise and semi-automated digitalization of spectral material captured on photo-plates. 
+                                            Virtual Photometer accounts for characteristic curves of both the scanner and the photoemulsion, performs data averaging, 
+                                            noise retraction, precise reference point selection, and many other features.
+                                            Virtual Photometer provides a powerful graphical user interface, is written in Delphi, and is fully integrated into the data processing routine.
                                         </li>
-                                    </ul>      
+                                        <li>
+                                            Profile Manipulator &ndash; a solution for expedated processing, analysis, and visualization of spectral line profiles.
+                                            Profile Manipulator allows to interactively visualize and process large amounts of spectral data, combine and calculate derivative profiles while keeping track of the measurement errors.
+                                            Profile Manipulator is written in Delphi and is now an important part of the spectral processing workflow.
+                                        </li>
+                                        <li>
+                                            [TBD] &ndash; a Machine-Learning-based tool for semi-automated detection and restoration of contamination and impurities in spectral images (python, status: approaching MVP)
+                                        </li>
+                                        <li>
+                                            [TBD] &ndash; a code written in Wolfram Mathematica that calculates the Stokes I and V profiles of a hydrogen atom emission under arbitrary magnetic fields. 
+                                            The code takes into account the fine structure of hydrogen atom terms, the intermediate Paschen-Back effect. It is now in MVP stage, and is also rewritten in python as a part of SolRaT.
+                                        </li>
+                                        <li>
+                                            EYLEED &ndash; a software for Low Energy Electrod Diffraction pattern calculation and inversion within the kinematical approximation. 
+                                            EYLEED is written in C++ (originally in fortran90), and offers a rich graphical user interface, significantly facilitating the interpretation of the LEED patterns.
+                                        </li>
+                                        <li>
+                                            [TBD] &ndash; a code for an effective numeric solution of functional minimization functional using finite difference and finite element methods with on-the-fly adapting mesh.
+                                            This code is written in python, is now in MVP stage, and is actively used as one of the methods for finding the equilibrium liquid crystal director profiles. 
+                                        </li>
+                                    </ul>
                                 </div>                          
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="font-paragraph-title font-shadow">Software Development</div>
-                    <table class="yysbp shadow">
-                        <tr>
-                            <td class="la5 yycc td-flex">
-                                <div class="td-flex-text">
-                                    <div>
-                                        Machine Learning in Finance:
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            Python (PyTorch, numpy, scipy, pandas, plotly) 
-                                        </li>
-                                        <li>
-                                            MongoDB
-                                        </li>
-                                    </ul>
-                                    <div>
-                                        Model implemenation and Performance Engeneering in Credit Risk:
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            Python (numpy, pandas, pandera, numba, scipy, numexpr) 
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="lai5">
-                                    <img class="shadow" src="media/vp.png" style="width:100%" alt="Program" draggable="false">
-                                </div> 
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="font-paragraph-title font-shadow">Hobbies</div>
-                    <table class="yysbp shadow">
-                        <tr>
-                            <td class="la6 yycc td-flex">
-                                <div class="lai6">
-                                    <img class="shadow" src="media/volley.jpg" style="width:100%" alt="Volleyball" draggable="false">
-                                </div> 
-                                <div class="td-flex-text">
-                                    <div>
-                                        Volleyball
-                                    </div>
-                                    <div>
-                                        Chess
-                                    </div>
-                                    <div>
-                                        Music (guitar, piano)
-                                    </div>
-                                    <div>
-                                        Table tennis
-                                    </div>
-                                </div>
                             </td>
                         </tr>
                     </table>
