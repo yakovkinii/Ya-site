@@ -38,6 +38,23 @@ h1{
     text-align: center;
     margin-top: 1.3vw;
 }
+.font-paragraph-title-about{
+    font-family: 'Open Sans';
+    font-size: 2vw;
+    font-weight: 400;
+    color: #004;
+    text-align: center;
+    margin: 1vw;
+}
+.font-product-name{
+    font-family: 'Open Sans';
+    font-size: 2vw;
+    font-weight: 400;
+    color: #004;
+    text-align: center;
+    margin: 0.0vw;
+}
+
 .font-page-title{
     text-transform: uppercase;
     font-family: 'Open Sans';
@@ -96,6 +113,17 @@ td, th {
     margin: 0.6vw auto;
 }
 
+.flexcol{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.3vw 1.3vw;
+    margin: 0.6vw auto;
+}
+
 .flexrowcont{
     flex-grow: 0;
     flex-shrink: 1;
@@ -122,6 +150,9 @@ td, th {
     }
     .font-paragraph-title{
         font-size: 3vw;
+    }
+    .font-paragraph-title-about{
+        font-size: 3.5vw;
     }
     .font-page-title{
         font-size: 4vw;
