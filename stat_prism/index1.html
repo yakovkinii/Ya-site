@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StatPrism - Speak Stats</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> <!-- Lightbox for gallery -->
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@4.1.3/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             background-color: #000;
             color: #EEDD88;
@@ -22,9 +28,15 @@
             background-color: #111;
             padding: 1rem 2rem;
         }
-        nav .nav-links a {
+        nav .nav-links a{
             color: #EEDD88;
+            font-size: large;
             margin-left: 1.5rem;
+            text-decoration: none;
+        }
+        nav .logo a{
+            color: #EEDD88;
+            font-size: larger;
             text-decoration: none;
         }
         .features {
@@ -38,15 +50,21 @@
         }
         .features .description {
             flex-grow: 1;
+            font-size:x-large;
+            margin-left: 6%;
+            line-height: 160%;
         }
         .gallery {
+            border-top: 10px solid #111;
+            border-bottom: 10px solid #111;
+            /* background-color: #111; */
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 0;
             padding: 2rem;
         }
         .gallery img {
-            width: 200px;
+            width: 15vw;
             height: auto;
             cursor: pointer;
         }
@@ -62,66 +80,154 @@
             color: #000;
             border: none;
             text-decoration: none;
+            font-weight: 600;
             cursor: pointer;
         }
         .download .btn:hover {
             background-color: #d4c577;
         }
+        .disclamer{
+            font-size: xx-small;
+            color: #EEDD88aa;
+        }
         footer {
             background-color: #111;
             text-align: center;
+            font-size: smaller;
             padding: 1rem;
         }
+        figure {
+            margin: 10px;
+        }
+
+.pswp__img {
+    object-fit: contain; /* Ensures images scale while maintaining aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+}
     </style>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <div class="logo">StatPrism</div>
+        <div class="logo"><a href="#">StatPrism</a></div>
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#gallery">Gallery</a>
             <a href="#download">Download</a>
-            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <img src="logo-image.jpg" alt="StatPrism Logo">
+        <img src="../media/StatPrism_splash_old.png" alt="StatPrism Logo">
         <div class="description">
-            <h2>What StatPrism Does</h2>
             <ul>
-                <li>Visualizes complex data into clear charts and graphs.</li>
-                <li>Provides statistical insights with an easy-to-use interface.</li>
-                <li>Supports multiple data import formats for convenience.</li>
-                <li>Customizable reports for presentations and analysis.</li>
-                <li>Secure and reliable performance for enterprise use.</li>
+                <li>
+                    Intuitive Data Analysis
+                </li>
+                <li>
+                    Interactive Plots
+                </li>
+                <li>
+                    Analytical, Visual, and Verbal reports
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
-        <a href="../media/ataptfmin.jpg" data-lightbox="gallery" data-title="Screenshot 1"><img src="../media/ataptfmin.jpg" alt="Screenshot 1"></a>
-        <a href="../media/ey_leed.png" data-lightbox="gallery" data-title="Screenshot 2"><img src="../media/ey_leed.png" alt="Screenshot 2"></a>
-        <a href="../media/nlc.jpg" data-lightbox="gallery" data-title="Screenshot 3"><img src="../media/nlc.jpg" alt="Screenshot 3"></a>
-        <a href="../media/profile.jpg" data-lightbox="gallery" data-title="Screenshot 4"><img src="../media/profile.jpg" alt="Screenshot 4"></a>
+        <figure><a href="../media/sc0.png" data-size="1200x800"><img src="../media/sc0.png" alt="Screenshot 0"></a></figure>
+        <figure><a href="../media/sc1.png" data-size="1200x800"><img src="../media/sc1.png" alt="Screenshot 1"></a></figure>
+        <figure><a href="../media/sc2.png" data-size="1200x800"><img src="../media/sc2.png" alt="Screenshot 2"></a></figure>
+        <figure><a href="../media/sc3.png" data-size="1200x800"><img src="../media/sc3.png" alt="Screenshot 3"></a></figure>
+        </figure>
     </section>
+
+    <!-- PhotoSwipe HTML structure -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Download Section -->
     <section id="download" class="download">
-        <p>StatPrism is available for download under multiple licensing options to suit your needs. Click the button below to get started.</p>
-        <a href="https://external-download-link.com" class="btn">Download StatPrism</a>
+        <p>StatPrism is available for download for evaluation and testing.
+        <p>The link below provides the source code and the instructions for setting up the running environment</p>
+        <a href="https://bitbucket.org/yakovkinii/stat_prism/" class="btn" target="_blank">Download StatPrism for Windows</a>
     </section>
 
     <!-- Contact Section -->
     <footer id="contact">
-        <p>&copy; 2024 StatPrism. All rights reserved.</p>
-        <p>Developed by <a href="https://developer-website.com" style="color: #EEDD88;">Developer Name</a></p>
+        <p>&copy; 2023 &mdash; 2024 <a href="../" style="color: #EEDD88;">Ivan Yakovkin</a>. All rights reserved. Please contact the author for more information on the licensing options.</p>
+        <p class="disclamer">THE SOFTWARE IS IN ALPHA PHASE AND MAY CONTAIN BUGS AND ERRORS. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
     </footer>
 
-    <!-- JavaScript for Lightbox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- PhotoSwipe JS -->
+    <script src="https://unpkg.com/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+    <script src="https://unpkg.com/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const pswpElement = document.querySelector('.pswp');
+    const galleryElements = document.querySelectorAll('#gallery a');
+
+    const items = Array.from(galleryElements).map(el => ({
+        src: el.getAttribute('href'),
+        w: parseInt(el.getAttribute('data-size').split('x')[0]),
+        h: parseInt(el.getAttribute('data-size').split('x')[1]),
+        title: el.querySelector('img').alt
+    }));
+
+    galleryElements.forEach((el, index) => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            const options = {
+                index: index,
+                bgOpacity: 0.85,
+                showHideOpacity: true,
+                maxSpreadZoom: 2, // Prevents zooming beyond the natural size of the image
+                getDoubleTapZoom: function (isMouseClick, item) {
+                    return item.initialZoomLevel < 0.7 ? 1 : 1.5; // Controls double-tap zoom level
+                }
+            };
+            const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+        });
+    });
+});
+    </script>
 </body>
 </html>
