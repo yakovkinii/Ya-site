@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StatPrism - Speak Stats</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> <!-- Lightbox for gallery -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #EEDD88;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            padding: 1rem 2rem;
+        }
+        nav .nav-links a {
+            color: #EEDD88;
+            margin-left: 1.5rem;
+            text-decoration: none;
+        }
+        .features {
+            display: flex;
+            align-items: center;
+            padding: 3rem 2rem;
+        }
+        .features img {
+            width: 40%;
+            margin-right: 2rem;
+        }
+        .features .description {
+            flex-grow: 1;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+        .download {
+            text-align: center;
+            padding: 2rem;
+        }
+        .download .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #EEDD88;
+            color: #000;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .download .btn:hover {
+            background-color: #d4c577;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">StatPrism</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <img src="logo-image.jpg" alt="StatPrism Logo">
+        <div class="description">
+            <h2>What StatPrism Does</h2>
+            <ul>
+                <li>Visualizes complex data into clear charts and graphs.</li>
+                <li>Provides statistical insights with an easy-to-use interface.</li>
+                <li>Supports multiple data import formats for convenience.</li>
+                <li>Customizable reports for presentations and analysis.</li>
+                <li>Secure and reliable performance for enterprise use.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <a href="media/ataptfmin.jpg" data-lightbox="gallery" data-title="Screenshot 1"><img src="media/ataptfmin.jpg" alt="Screenshot 1"></a>
+        <a href="media/ey_leed.png" data-lightbox="gallery" data-title="Screenshot 2"><img src="media/ey_leed.png" alt="Screenshot 2"></a>
+        <a href="media/nlc.jpg" data-lightbox="gallery" data-title="Screenshot 3"><img src="media/nlc.jpg" alt="Screenshot 3"></a>
+        <a href="media/profile.jpg" data-lightbox="gallery" data-title="Screenshot 4"><img src="media/profile.jpg" alt="Screenshot 4"></a>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <p>StatPrism is available for download under multiple licensing options to suit your needs. Click the button below to get started.</p>
+        <a href="https://external-download-link.com" class="btn">Download StatPrism</a>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <p>&copy; 2024 StatPrism. All rights reserved.</p>
+        <p>Developed by <a href="https://developer-website.com" style="color: #EEDD88;">Developer Name</a></p>
+    </footer>
+
+    <!-- JavaScript for Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
