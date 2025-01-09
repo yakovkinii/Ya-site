@@ -1,4 +1,0 @@
-- Add all the links (to about).
-- Move documents from materials folder.
-- Add unfinished/frozen projects to materials. Maybe to a separate page.
-- Update ISyDMA award image.

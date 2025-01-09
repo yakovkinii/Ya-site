@@ -1,50 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-   <url>
-
-      <loc>https://www.yakovkinii.com/index.html</loc>
-
-      <lastmod>2023-07-18</lastmod>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>1.0</priority>
-
-   </url>
-   <url>
-
-      <loc>https://www.yakovkinii.com/about/index.html</loc>
-
-      <lastmod>2023-07-18</lastmod>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.2</priority>
-
-   </url>
     <url>
-
-      <loc>https://www.yakovkinii.com/publications/index.html</loc>
-
-      <lastmod>2023-07-18</lastmod>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.2</priority>
-
-   </url>
-       <url>
-
-      <loc>https://www.yakovkinii.com/materials/index.html</loc>
-
-      <lastmod>2023-07-18</lastmod>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.1</priority>
-
-   </url>
-
-</urlset> 
+        <loc>yakovkinii.com/home.html</loc>
+        <lastmod>2025-01-09T13:24:43+01:00</lastmod>
+    </url>
+    <url>
+        <loc>yakovkinii.com/index.html</loc>
+        <lastmod>2025-01-09T13:24:43+01:00</lastmod>
+    </url>
+    <url>
+        <loc>yakovkinii.com/profile_manipulator.html</loc>
+        <lastmod>2025-01-08T20:08:47+01:00</lastmod>
+    </url>
+    <url>
+        <loc>yakovkinii.com/publications.html</loc>
+        <lastmod>2025-01-09T13:25:13+01:00</lastmod>
+    </url>
+    <url>
+        <loc>yakovkinii.com/virtual_photometer.html</loc>
+        <lastmod>2025-01-09T13:28:17+01:00</lastmod>
+    </url>
+    <url>
+        <loc>yakovkinii.com/stat_prism.html</loc>
+        <lastmod>2025-01-09T13:14:10+01:00</lastmod>
+    </url>
+</urlset>
