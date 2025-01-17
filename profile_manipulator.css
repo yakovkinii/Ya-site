@@ -114,3 +114,8 @@
   font-size: 0.75rem;
   margin: 20px auto 20px 0;
 }
+
+.u-section-4 .u-btn-1 {
+  background-image: none;
+  padding: 0;
+}
