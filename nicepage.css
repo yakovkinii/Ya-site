@@ -15366,6 +15366,13 @@ section.u-image:not(.u-hover-box),
   display: flex;
   flex: 1;
 }
+.u-post-category {
+  width: -webkit-max-content;
+  width: max-content;
+}
+.u-post-category a {
+  display: inline-block;
+}
 .u-metadata {
   display: table;
 }
