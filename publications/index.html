@@ -1,2 +1,4111 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../publications.html"></head><body></body></html>
+<html>
+<head><meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display:wght@400&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --vw: calc(min(1140px,100vw*0.95)/100);
+}
+@media only screen and (max-width: 0px){
+    :root{
+        --vw: calc(1vw*0.95);
+    }
+}
+*{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    font-size: calc(2* var(--vw));
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+}
+div{
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}  
+.hidden{
+    display: none !important;
+}
+
+.child:nth-child(2n of .child:not(.hidden)) {
+	background-color: #404040;
+}
+
+.DivFullWidth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#id99 {
+	background-color: #e5e5e5;
+	position: fixed;
+	top: calc(0 * var(--vw));
+}
+
+.DivWithVerticallyCenteredContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#id89 {
+	margin-top: calc(1 * var(--vw));
+	margin-left: calc(1 * var(--vw));
+	align-self: flex-start;
+}
+
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id87 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+	text-align: left;
+	text-decoration: underline 0.1vw transparent;
+	transition: text-decoration 500ms;
+}
+
+#id87:hover {
+	text-decoration: underline 0.1vw #888;
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id88 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+}
+
+#id98 {
+	gap: calc(4 * var(--vw));
+	padding: calc(0.5 * var(--vw));
+}
+
+.DivWithLeftAdjustedContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#id90 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+.CheckboxInput {
+	width: calc(2 * var(--vw));
+	height: calc(2 * var(--vw));
+}
+
+.CheckboxLabel {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: #666;
+}
+
+#id91 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id92 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id93 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id94 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id95 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id96 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id97 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: calc(0.2 * var(--vw));
+	gap: calc(1 * var(--vw));
+}
+
+#id100 {
+	height: calc(9 * var(--vw));
+	width: calc(1 * var(--vw));
+	flex-shrink: 0;
+}
+
+.Div100VW {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: calc(100 * var(--vw));
+}
+
+#id109 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+.TextNumerator {
+	font-family: Open Sans;
+	font-size: calc(2 * var(--vw));
+	color: #888;
+	width: calc(4 * var(--vw));
+	text-align: center;
+}
+
+#id108 {
+	gap: calc(0.5 * var(--vw));
+}
+
+.ImgQuartile {
+	width: calc(3 * var(--vw));
+	height: calc(3 * var(--vw));
+}
+
+#id104 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id101 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id102 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id103 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id107 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id105 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id106 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id119 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id118 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id114 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id110 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id111 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id112 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id113 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id117 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id115 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id116 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id127 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id126 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id122 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id120 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id121 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id125 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id123 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id124 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id137 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id136 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id132 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id128 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id129 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id130 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id131 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id135 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id133 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id134 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id146 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id145 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id141 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id138 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id139 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id140 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id144 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id142 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id143 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id155 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id154 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id150 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id147 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id148 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id149 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id153 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id151 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id152 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id164 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id163 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id159 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id156 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id157 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id158 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id162 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id160 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id161 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id174 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id173 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id169 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id165 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id166 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id167 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id168 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id172 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id170 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id171 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id184 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id183 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id179 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id175 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id176 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id177 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id178 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id182 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id180 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id181 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id194 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id193 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id189 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id185 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id186 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id187 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id188 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id192 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id190 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id191 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id203 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id202 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id198 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id195 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id196 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id197 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id201 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id199 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id200 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id213 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id212 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id208 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id204 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id205 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id206 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id207 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id211 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id209 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id210 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id223 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id222 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id218 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id214 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id215 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id216 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id217 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id221 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id219 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id220 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id231 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id230 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id226 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id224 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id225 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id229 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id227 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id228 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id241 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id240 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id236 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id232 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id233 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id234 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id235 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id239 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id237 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id238 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id251 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id250 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id246 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id242 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id243 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id244 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id245 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id249 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id247 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id248 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id260 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id259 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id255 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id252 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id253 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id254 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id258 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id256 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id257 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id269 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id268 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id264 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id261 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id262 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id263 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id267 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id265 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id266 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id279 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id278 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id274 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id270 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id271 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id272 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id273 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id277 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id275 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id276 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id289 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id288 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id284 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id280 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id281 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id282 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id283 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id287 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id285 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id286 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id299 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id298 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id294 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id290 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id291 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id292 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id293 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id297 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id295 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id296 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id309 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id308 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id304 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id300 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id301 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id302 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id303 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id307 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id305 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id306 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id319 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id318 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id314 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id310 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id311 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id312 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id313 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id317 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id315 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id316 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id328 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id327 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id323 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id320 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id321 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id322 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id326 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id324 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id325 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id337 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id336 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id332 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id329 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id330 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id331 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id335 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id333 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id334 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id346 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id345 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id341 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id338 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id339 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id340 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id344 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id342 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id343 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id355 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id354 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id350 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id347 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id348 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id349 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id353 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id351 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id352 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id364 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id363 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id359 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id356 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id357 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id358 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id362 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id360 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id361 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id374 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id373 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id369 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id365 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id366 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id367 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id368 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id372 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id370 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id371 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id384 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id383 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id379 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id375 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id376 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id377 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id378 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id382 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id380 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id381 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id393 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id392 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id388 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id385 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id386 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id387 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id391 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id389 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id390 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id402 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id401 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id397 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id394 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id395 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id396 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id400 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id398 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id399 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id410 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id409 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id405 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id403 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id404 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id408 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id406 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id407 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id418 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id417 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id413 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id411 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id412 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id416 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id414 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id415 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id428 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id427 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id423 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id419 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id420 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id421 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id422 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id426 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id424 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id425 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id437 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id436 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id432 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id429 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id430 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id431 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id435 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id433 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id434 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id444 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id443 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id439 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id438 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id442 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id440 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id441 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id453 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id452 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id448 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id445 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id446 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id447 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id451 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id449 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id450 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id462 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id461 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id457 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id454 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id455 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id456 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id460 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id458 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id459 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id470 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id469 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id465 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id463 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id464 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id468 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id466 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id467 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id478 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id477 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id473 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id471 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id472 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id476 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id474 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id475 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id487 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id486 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id482 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id479 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id480 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id481 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id485 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id483 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id484 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id495 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id494 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id490 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id488 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id489 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id493 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id491 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id492 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id503 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id502 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id498 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id496 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id497 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id501 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id499 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id500 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id512 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id511 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id507 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id504 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id505 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id506 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id510 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id508 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id509 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id521 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id520 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id516 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id513 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id514 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id515 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id519 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id517 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id518 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id528 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id527 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id523 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id522 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id526 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id524 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id525 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id536 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id535 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id531 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id529 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id530 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id534 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id532 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id533 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id544 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id543 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id539 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id537 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id538 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id542 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id540 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id541 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id552 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id551 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id547 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id545 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id546 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id550 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id548 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id549 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id560 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id559 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id555 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id553 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id554 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id558 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id556 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id557 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id568 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id567 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id563 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id561 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id562 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id566 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id564 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id565 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id576 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id575 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id571 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id569 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id570 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id574 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id572 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id573 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id584 {
+	padding-top: calc(0.5 * var(--vw));
+	padding-bottom: calc(0.5 * var(--vw));
+}
+
+#id583 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id579 {
+	gap: calc(0.4 * var(--vw));
+}
+
+#id577 {
+	font-size: calc(1.1 * var(--vw));
+}
+
+#id578 {
+	font-size: calc(0.8 * var(--vw));
+	color: #bcf;
+}
+
+#id582 {
+	gap: calc(0.2 * var(--vw));
+}
+
+#id580 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+#id581 {
+	font-size: calc(0.9 * var(--vw));
+	color: #ddd;
+}
+
+
+</style>
+</head>
+<body>
+<div id="id99" class="DivFullWidth">
+<div id="id89" class="DivWithVerticallyCenteredContent">
+<a href="../" id="id87" class="Link" >Ivan I. Yakovkin</a>
+<p id="id88" class="Text">
+&nbsp;&rarr; Publications
+</p>
+</div>
+<div id="id98" class="DivWithVerticallyCenteredContent">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id90" >
+
+            <input type="checkbox" checked id="Q1" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.Q1').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="Q1"  class="CheckboxLabel">Q1 Journal</label>
+</div>
+<div id="id91" >
+
+            <input type="checkbox" checked id="Q2" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.Q2').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="Q2"  class="CheckboxLabel">Q2 Journal</label>
+</div>
+</div>
+<div  class="DivWithLeftAdjustedContent">
+<div id="id92" >
+
+            <input type="checkbox" checked id="Q3" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.Q3').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="Q3"  class="CheckboxLabel">Q3 Journal</label>
+</div>
+<div id="id93" >
+
+            <input type="checkbox" checked id="Q4" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.Q4').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="Q4"  class="CheckboxLabel">Q4 Journal</label>
+</div>
+</div>
+<div  class="DivWithLeftAdjustedContent">
+<div id="id94" >
+
+            <input type="checkbox" checked id="A" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.A').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="A"  class="CheckboxLabel">Cat. A Journal</label>
+</div>
+<div id="id95" >
+
+            <input type="checkbox" checked id="B" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.B').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="B"  class="CheckboxLabel">Cat. B Journal</label>
+</div>
+</div>
+<div  class="DivWithLeftAdjustedContent">
+<div id="id96" >
+
+            <input type="checkbox" checked id="IC" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.IC').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="IC"  class="CheckboxLabel">Intl. Conference</label>
+</div>
+<div id="id97" >
+
+            <input type="checkbox" checked id="LC" class="CheckboxInput" onclick=
+            "document.querySelectorAll('.LC').forEach(el => el.classList.toggle('hidden'));">
+            
+<label for="LC"  class="CheckboxLabel">Natl. Conference</label>
+</div>
+</div>
+</div>
+</div>
+<div id="id100" class="DivFullWidth">
+
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id109" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id108" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id104" class="DivWithVerticallyCenteredContent">
+<p id="id101" class="Text">
+"Simulation of low energy electron diffraction patterns in kinematical approximation"
+</p>
+<a href="pdf/2016_conf_univ.pdf" id="id102" class="Link" target="_blank">[PDF] </a>
+<a href="https://www.researchgate.net/publication/351349207_Simulation_of_low_energy_electron_diffraction_patterns_in_kinematical_approximation" id="id103" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id107" class="DivWithVerticallyCenteredContent">
+<p id="id105" class="Text">
+<u>Yakovkin I.I.</u>
+</p>
+<p id="id106" class="Text">
+XII International conference 'Electronics and applied physics', Kyiv (Ukraine), October 19 – 22, 2016<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id119" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id118" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id114" class="DivWithVerticallyCenteredContent">
+<p id="id110" class="Text">
+"DFT and Monte Carlo study of the W(001) surface reconstruction"
+</p>
+<a href="pdf/2017_epjb.pdf" id="id111" class="Link" target="_blank">[PDF] </a>
+<a href="http://dx.doi.org/10.1140/epjb/e2017-80107-7" id="id112" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/318131532_DFT_and_Monte_Carlo_study_of_the_W001_surface_reconstruction?_sg=q-YFFj9wuGvJkGkK5iDZOlxr_CCnCXhCpr0Drs4rvsYIfvy0vlzEgTZv9WdPEq3djO8333Atn7g3LuQ0VDYLMjAxaeOar4EeGpUZPvx_.ypJWo8MNBI9ToTMqoGyBzZaOgpFMTKXgk_IpS8h1gTwWgSnRatpxoliB8j8ltsPOzrPrQnbtYHL_2qSzP1vyGg" id="id113" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id117" class="DivWithVerticallyCenteredContent">
+<p id="id115" class="Text">
+Yakovkin I.N., <u>Yakovkin I.I.</u>, Petrova N.V.
+</p>
+<p id="id116" class="Text">
+European Physical Journal B, 90 (125), 2017<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth LC child">
+<div  class="Div100VW">
+<div id="id127" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id126" class="DivWithVerticallyCenteredContent">
+<img src="media/ua.png" title="National Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id122" class="DivWithVerticallyCenteredContent">
+<p id="id120" class="Text">
+"Електроіндукована орієнтаційна нестійкість у планарній нематичній флексоелектричній комірці з рухомою легкою віссю"
+</p>
+<a href="pdf/2019_conf_univ.pdf" id="id121" class="Link" target="_blank">[PDF] </a>
+</div>
+<div id="id125" class="DivWithVerticallyCenteredContent">
+<p id="id123" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F., Lesiuk A.I.
+</p>
+<p id="id124" class="Text">
+Наукова конференція молодих вчених 'Наука ХХІ сторіччя: сучасні проблеми фізики', Kyiv (Ukraine), May 7 – 10, 2019<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q4 child">
+<div  class="Div100VW">
+<div id="id137" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id136" class="DivWithVerticallyCenteredContent">
+<img src="media/q4.png" title="Q4 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id132" class="DivWithVerticallyCenteredContent">
+<p id="id128" class="Text">
+"Line profiles and magnetic fields in the limb solar flare of July 1, 1981. Preliminary results"
+</p>
+<a href="pdf/2020_jps.pdf" id="id129" class="Link" target="_blank">[PDF] </a>
+<a href="http://dx.doi.org/10.30970/jps.24.2901" id="id130" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/340940421_Line_profiles_and_magnetic_fields_in_the_limb_solar_flare_of_July_17_1981_Preliminary_results" id="id131" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id135" class="DivWithVerticallyCenteredContent">
+<p id="id133" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Lozitska N.I.
+</p>
+<p id="id134" class="Text">
+Journal of Physical Studies, 24 (2), 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth LC child">
+<div  class="Div100VW">
+<div id="id146" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id145" class="DivWithVerticallyCenteredContent">
+<img src="media/ua.png" title="National Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id141" class="DivWithVerticallyCenteredContent">
+<p id="id138" class="Text">
+"Geophysical effects of powerful solar flares and modern ideas about their physical nature"
+</p>
+<a href="pdf/2020_conf_geophys.pdf" id="id139" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.geol.univ.kiev.ua/docs/conf/conf_univ_apr_2020.pdf" id="id140" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id144" class="DivWithVerticallyCenteredContent">
+<p id="id142" class="Text">
+<u>Yakovkin I.I.</u>, Lozitska N.I., Lozitsky V.G.
+</p>
+<p id="id143" class="Text">
+Всеукраїнська молодіжна наукова конференція-школа 'Сучасні проблеми наук про Землю', Kyiv (Ukraine), April 14 – 16, 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id155" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id154" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id150" class="DivWithVerticallyCenteredContent">
+<p id="id147" class="Text">
+"Simultaneous observations of K Ca II, Hδ and He I 4471.5 Å lines in a limb solar flare"
+</p>
+<a href="pdf/2020_conf_univ_1.pdf" id="id148" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2020/05/BookOfAbstracts2020.pdf" id="id149" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id153" class="DivWithVerticallyCenteredContent">
+<p id="id151" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G., Lozitska N.I.
+</p>
+<p id="id152" class="Text">
+International Conference 'Astronomy and Space Physics in the Kyiv University', Kyiv (Ukraine), May 27 – 29, 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id164" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id163" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id159" class="DivWithVerticallyCenteredContent">
+<p id="id156" class="Text">
+"A program on processing the solar spectra scans"
+</p>
+<a href="pdf/2020_conf_univ_2.pdf" id="id157" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2020/05/BookOfAbstracts2020.pdf" id="id158" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id162" class="DivWithVerticallyCenteredContent">
+<p id="id160" class="Text">
+<u>Yakovkin I.I.</u>
+</p>
+<p id="id161" class="Text">
+International Conference 'Astronomy and Space Physics in the Kyiv University', Kyiv (Ukraine), May 27 – 29, 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id174" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id173" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id169" class="DivWithVerticallyCenteredContent">
+<p id="id165" class="Text">
+"On the possible existence of superstrong magnetic fields in a limb solar flare"
+</p>
+<a href="pdf/2020_Odessa.pdf" id="id166" class="Link" target="_blank">[PDF] </a>
+<a href="http://dx.doi.org/10.18524/1810-4215.2020.33.216453" id="id167" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/347388950_ON_THE_POSSIBLE_EXISTENCE_OF_SUPERSTRONG_MAGNETIC_FIELDS_IN_A_LIMB_SOLAR_FLARE" id="id168" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id172" class="DivWithVerticallyCenteredContent">
+<p id="id170" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id171" class="Text">
+Odessa Astronomical Publications, 33, 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id184" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id183" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id179" class="DivWithVerticallyCenteredContent">
+<p id="id175" class="Text">
+"Magnetic fields in limb solar flares on heights 2 – 14 Mm"
+</p>
+<a href="pdf/2020_visnyk.pdf" id="id176" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.17721/BTSNUA.2020.61.06-14" id="id177" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/350347144_Magnetic_fields_in_limb_solar_flares_on_heights_2-14_Mm" id="id178" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id182" class="DivWithVerticallyCenteredContent">
+<p id="id180" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Kravchenko E.O.
+</p>
+<p id="id181" class="Text">
+Bulletin of Taras Shevchenko National University of Kyiv. Astronomy, 61, 2020<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id194" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id193" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id189" class="DivWithVerticallyCenteredContent">
+<p id="id185" class="Text">
+"Magnetic field measurements in a limb solar flare by hydrogen, helium and ionized calcium lines"
+</p>
+<a href="pdf/2021_ASR.pdf" id="id186" class="Link" target="_blank">[PDF] </a>
+<a href="http://dx.doi.org/10.1016/j.asr.2021.03.036" id="id187" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/350730365_Magnetic_field_measurements_in_a_limb_solar_flare_by_hydrogen_helium_and_ionized_calcium_lines" id="id188" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id192" class="DivWithVerticallyCenteredContent">
+<p id="id190" class="Text">
+<u>Yakovkin I.I.</u>, Veronig A.M., Lozitsky V.G.
+</p>
+<p id="id191" class="Text">
+Advances in Space Research, 68 (3), 2021<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id203" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id202" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id198" class="DivWithVerticallyCenteredContent">
+<p id="id195" class="Text">
+"Comparison of different methods of magnetic field measurements in the solar flares"
+</p>
+<a href="pdf/2021_conf_univ.pdf" id="id196" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2021/05/BookOfAbstracts-2021.pdf" id="id197" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id201" class="DivWithVerticallyCenteredContent">
+<p id="id199" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Kravchenko E.O., Tarashchuk V.P.
+</p>
+<p id="id200" class="Text">
+International Conference 'Astronomy and Space Physics in the Kyiv University', Kyiv (Ukraine), May 25 – 28, 2021<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id213" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id212" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id208" class="DivWithVerticallyCenteredContent">
+<p id="id204" class="Text">
+"Magnetic fields and turbulent velocities in a limb solar flare by hydrogen, helium and ionized calcium lines"
+</p>
+<a href="pdf/2021_conf_ESPM.pdf" id="id205" class="Link" target="_blank">[PDF] </a>
+<a href="https://indico.ict.inaf.it/event/794/contributions/9897/" id="id206" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/354527370_Magnetic_fields_and_turbulent_velocities_in_a_limb_solar_flare_by_hydrogen_helium_and_ionized_calcium_lines" id="id207" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id211" class="DivWithVerticallyCenteredContent">
+<p id="id209" class="Text">
+<u>Yakovkin I.I.</u>, Veronig A.M., Lozitsky V.G.
+</p>
+<p id="id210" class="Text">
+16th European Solar Physics Meeting, Rome (Italy), September 6 – 10, 2021<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id223" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id222" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id218" class="DivWithVerticallyCenteredContent">
+<p id="id214" class="Text">
+"Comparison of different methods for magnetic field measurements in solar flares"
+</p>
+<a href="pdf/2021_Visnyk_KNU.pdf" id="id215" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.17721/BTSNUA.2021.63.15-21" id="id216" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/359936391_Comparison_of_different_methods_for_magnetic_field_measurements_in_solar_flares" id="id217" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id221" class="DivWithVerticallyCenteredContent">
+<p id="id219" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Kravchenko E.O., Tarashchuk V.P.
+</p>
+<p id="id220" class="Text">
+Bulletin of Taras Shevchenko National University of Kyiv. Astronomy, 63, 2021<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth LC child">
+<div  class="Div100VW">
+<div id="id231" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id230" class="DivWithVerticallyCenteredContent">
+<img src="media/ua.png" title="National Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id226" class="DivWithVerticallyCenteredContent">
+<p id="id224" class="Text">
+"Вплив електричного поля на поверхневі плазмонні коливання в комірці нематичного рідкого кристалу"
+</p>
+<a href="pdf/2021_conf_univ.pdf" id="id225" class="Link" target="_blank">[PDF] </a>
+</div>
+<div id="id229" class="DivWithVerticallyCenteredContent">
+<p id="id227" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id228" class="Text">
+Наукова конференція молодих вчених 'Наука ХХІ сторіччя: сучасні проблеми фізики', Kyiv (Ukraine), May 10 – 14, 2021<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id241" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id240" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id236" class="DivWithVerticallyCenteredContent">
+<p id="id232" class="Text">
+"Signatures of superstrong magnetic fields in a limb solar flare from observations of the Hα line"
+</p>
+<a href="pdf/2022_ASR.pdf" id="id233" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.1016/j.asr.2022.04.012" id="id234" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/360080838_Signatures_of_superstrong_magnetic_fields_in_a_limb_solar_flare_from_observations_of_the_Ha_line" id="id235" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id239" class="DivWithVerticallyCenteredContent">
+<p id="id237" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id238" class="Text">
+Advances in Space Research, 69 (12), 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id251" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id250" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id246" class="DivWithVerticallyCenteredContent">
+<p id="id242" class="Text">
+"Indications of superstrong magnetic fields in a limb solare flare and an active prominence from spectro-polarimetric observations in Hα and D3 lines"
+</p>
+<a href="pdf/2022_Gamow.pdf" id="id243" class="Link" target="_blank">[PDF] </a>
+<a href="http://gamow.odessa.ua/wp-content/uploads/2022/09/Program_Gamow-22.pdf" id="id244" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/363185538_Indications_of_superstrong_magnetic_fields_in_a_limb_solare_flare_and_an_active_prominence_from_spectro-polarimetric_observations_in_Ha_and_D3_lines" id="id245" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id249" class="DivWithVerticallyCenteredContent">
+<p id="id247" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id248" class="Text">
+XXII Gamow International Astronomical Conference-School, Odessa (Ukraine), August 22 – 26, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id260" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id259" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id255" class="DivWithVerticallyCenteredContent">
+<p id="id252" class="Text">
+"Signatures of possible superstrong magnetic fields in a limb solar flare and an active prominence from polarization study of Hα and He I D3 spectral line profiles"
+</p>
+<a href="pdf/2022_conf_univ_1.pdf" id="id253" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2022/10/Book_of_Abstracts-2022.pdf" id="id254" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id258" class="DivWithVerticallyCenteredContent">
+<p id="id256" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id257" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), October 18 – 21, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id269" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id268" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id264" class="DivWithVerticallyCenteredContent">
+<p id="id261" class="Text">
+"Magnetic fields in a limb solar flare at a height of 40 Mm according to spectral-polarization observations in the Hα line"
+</p>
+<a href="pdf/2022_conf_univ_2.pdf" id="id262" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2022/10/Book_of_Abstracts-2022.pdf" id="id263" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id267" class="DivWithVerticallyCenteredContent">
+<p id="id265" class="Text">
+Gromov M.A., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id266" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), October 18 – 21, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id279" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id278" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id274" class="DivWithVerticallyCenteredContent">
+<p id="id270" class="Text">
+"Magnetic field peculiarities in limb solar flare of 12 July 2012 at height of about 40 megameters"
+</p>
+<a href="pdf/2022_visnyk.pdf" id="id271" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.17721/BTSNUA.2022.66.36-41" id="id272" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/370038290_Magnetic_field_peculiarities_in_limb_solar_flare_of_12_July_2012_on_height_of_about_40_megameters" id="id273" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id277" class="DivWithVerticallyCenteredContent">
+<p id="id275" class="Text">
+Gromov M.A., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id276" class="Text">
+Bulletin of Taras Shevchenko National University of Kyiv. Astronomy, 66, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q1 child">
+<div  class="Div100VW">
+<div id="id289" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id288" class="DivWithVerticallyCenteredContent">
+<img src="media/q1.png" title="Q1 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id284" class="DivWithVerticallyCenteredContent">
+<p id="id280" class="Text">
+"Director orientational instability in a planar flexoelectric nematic cell with easy axis gliding"
+</p>
+<a href="pdf/2022_JML.pdf" id="id281" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.1016/j.molliq.2022.119888" id="id282" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/362132730_Director_orientational_instability_in_a_planar_flexoelectric_nematic_cell_with_easy_axis_gliding" id="id283" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id287" class="DivWithVerticallyCenteredContent">
+<p id="id285" class="Text">
+<u>Yakovkin I.I.</u>, Lesiuk A.I., Ledney M.F., Reshetnyak V.Yu.
+</p>
+<p id="id286" class="Text">
+Journal of Molecular Liquids, 363 (6), 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id299" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id298" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id294" class="DivWithVerticallyCenteredContent">
+<p id="id290" class="Text">
+"Surface plasmon oscillations control by nematic liquid crystal reorientation"
+</p>
+<a href="https://www.yakovkinii.com/materials/2022_nano.pdf" id="id291" class="Link" target="_blank">[PDF] </a>
+<a href="http://nano-conference.iop.kiev.ua/assets/files/nano22bookOfAbstracts.pdf" id="id292" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/362712393_Surface_plasmon_oscillations_control_by_nematic_liquid_crystal_reorientation" id="id293" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id297" class="DivWithVerticallyCenteredContent">
+<p id="id295" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id296" class="Text">
+10th jubilee International Conference 'Nanotechnologies and Nanomaterials NANO-2022', Lviv (Ukraine), August 25 – 27, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id309" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id308" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id304" class="DivWithVerticallyCenteredContent">
+<p id="id300" class="Text">
+"Orientational instability of the director in a planar flexoelectric nematic cell with easy axis gliding"
+</p>
+<a href="pdf/2022_isydma_1.pdf" id="id301" class="Link" target="_blank">[PDF] </a>
+<a href="https://www.isydma7.com/conf-data/isydma7/files/ISyDMA7%20Book%20of%20Abstracts.pdf" id="id302" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/366120924_Orientational_instability_of_the_director_in_a_planar_flexoelectric_nematic_cell_with_easy_axis_gliding" id="id303" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id307" class="DivWithVerticallyCenteredContent">
+<p id="id305" class="Text">
+<u>Yakovkin I.I.</u>, Lesiuk A.I., Ledney M.F., Reshetnyak V.Yu.
+</p>
+<p id="id306" class="Text">
+International Symposium on Dielectric Materials and Applications ISyDMA'7, Poznań (Poland), December 6 – 8, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id319" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id318" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id314" class="DivWithVerticallyCenteredContent">
+<p id="id310" class="Text">
+"Hysteresis of surface plasmon polariton effective index induced by liquid crystal reorientation"
+</p>
+<a href="pdf/2022_isydma_2.pdf" id="id311" class="Link" target="_blank">[PDF] </a>
+<a href="https://www.isydma7.com/conf-data/isydma7/files/ISyDMA7%20Book%20of%20Abstracts.pdf" id="id312" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/366086962_Hysteresis_of_surface_plasmon_polariton_effective_index_induced_by_liquid_crystal_reorientation" id="id313" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id317" class="DivWithVerticallyCenteredContent">
+<p id="id315" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id316" class="Text">
+International Symposium on Dielectric Materials and Applications ISyDMA'7, Poznań (Poland), December 6 – 8, 2022<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id328" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id327" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id323" class="DivWithVerticallyCenteredContent">
+<p id="id320" class="Text">
+"Search for superstrong magnetic fields in active processes on the Sun using spectro-polarimetry within 15 angstroms around the D3 line"
+</p>
+<a href="pdf/2023_yl_aoconf.pdf" id="id321" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2023/05/Book_of_Abstracts-2023inet.pdf" id="id322" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id326" class="DivWithVerticallyCenteredContent">
+<p id="id324" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id325" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 23 – 26, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id337" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id336" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id332" class="DivWithVerticallyCenteredContent">
+<p id="id329" class="Text">
+"Observations of high-speed downflows in the region of the seismic source in a large solar flare using spectro-polarimetry in the D3 line"
+</p>
+<a href="pdf/2023_lyl_aoconf.pdf" id="id330" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2023/05/Book_of_Abstracts-2023inet.pdf" id="id331" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id335" class="DivWithVerticallyCenteredContent">
+<p id="id333" class="Text">
+Lozitska N.I., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id334" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 23 – 26, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id346" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id345" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id341" class="DivWithVerticallyCenteredContent">
+<p id="id338" class="Text">
+"Evidences of strong magnetic fields in the active prominence on July 24, 1999 observed at 07:00:10 UT"
+</p>
+<a href="pdf/2023_gyl_aoconf.pdf" id="id339" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2023/05/Book_of_Abstracts-2023inet.pdf" id="id340" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id344" class="DivWithVerticallyCenteredContent">
+<p id="id342" class="Text">
+Gromov M.A., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id343" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 23 – 26, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id355" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id354" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id350" class="DivWithVerticallyCenteredContent">
+<p id="id347" class="Text">
+"Addressing non-local relations in differently digitized spectra using machine learning"
+</p>
+<a href="pdf/2023_ybp1_aoconf.pdf" id="id348" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2023/05/Book_of_Abstracts-2023inet.pdf" id="id349" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id353" class="DivWithVerticallyCenteredContent">
+<p id="id351" class="Text">
+<u>Yakovkin I.I.</u>, Bartenev A.O., Petrova N.V.
+</p>
+<p id="id352" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 23 – 26, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id364" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id363" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id359" class="DivWithVerticallyCenteredContent">
+<p id="id356" class="Text">
+"Detecting and addressing spectral contamination through machine learning"
+</p>
+<a href="pdf/2023_ybp2_aoconf.pdf" id="id357" class="Link" target="_blank">[PDF] </a>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2023/05/Book_of_Abstracts-2023inet.pdf" id="id358" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id362" class="DivWithVerticallyCenteredContent">
+<p id="id360" class="Text">
+<u>Yakovkin I.I.</u>, Bartenev A.O., Petrova N.V.
+</p>
+<p id="id361" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 23 – 26, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q1 child">
+<div  class="Div100VW">
+<div id="id374" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id373" class="DivWithVerticallyCenteredContent">
+<img src="media/q1.png" title="Q1 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id369" class="DivWithVerticallyCenteredContent">
+<p id="id365" class="Text">
+"Search for superstrong magnetic fields in active processes on the Sun using spectro-polarimetry within 15 angstroms around the D3 line"
+</p>
+<a href="pdf/2023_mnras.pdf" id="id366" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.1093/mnras/stad1816" id="id367" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/371538898_Search_for_superstrong_magnetic_fields_in_active_processes_on_the_Sun_using_spectro-polarimetry_within_15_angstroms_around_the_D3_line" id="id368" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id372" class="DivWithVerticallyCenteredContent">
+<p id="id370" class="Text">
+<u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id371" class="Text">
+Monthly Notices of the Royal Astronomical Society, 523 (40), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q4 child">
+<div  class="Div100VW">
+<div id="id384" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id383" class="DivWithVerticallyCenteredContent">
+<img src="media/q4.png" title="Q4 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id379" class="DivWithVerticallyCenteredContent">
+<p id="id375" class="Text">
+" Spectral manifestations of strong and super-strong magnetic fields in an active prominence on July 24, 1999"
+</p>
+<a href="pdf/2023_KFNT.pdf" id="id376" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.15407/kfnt2023.05.065" id="id377" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/371946515_Spectral_manifestations_of_strong_and_especially_strong_magnetic_fields_in_the_active_prominence" id="id378" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id382" class="DivWithVerticallyCenteredContent">
+<p id="id380" class="Text">
+<u>Yakovkin I.I.</u>, Hromov M.A., Lozitsky V.G.
+</p>
+<p id="id381" class="Text">
+Kinematics and Physics of Celestial Bodies, 39 (5), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id393" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id392" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id388" class="DivWithVerticallyCenteredContent">
+<p id="id385" class="Text">
+"Comparison of magnetic fields by Sodium and Nickel lines measured in the area of the seismic source of a powerful solar flare"
+</p>
+<a href="http://www.astrobulletin.univ.kiev.ua/67_lozitska/#more-1457" id="id386" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/372829698_COMPARISON_OF_MAGNETIC_FIELDS_BY_D1_D2_AND_NiI_58929_LIINES_MEASURED_IN_THE_AREAS_OF_THE_SEISMIC_SOURCE_OF_A_POWERFUL_SOLAR_FLARE_AND_IN_A_SUNSPOT_WITHOUT_FLARES" id="id387" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id391" class="DivWithVerticallyCenteredContent">
+<p id="id389" class="Text">
+Lozitska N.I., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id390" class="Text">
+Bulletin of Taras Shevchenko National University of Kyiv. Astronomy, 67 (1), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id402" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id401" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id397" class="DivWithVerticallyCenteredContent">
+<p id="id394" class="Text">
+"Comparison of magnetic fields by D1, D2 and NiI lines measured in the areas of the seismic source of a powerful solar flare and in a sunspot without flares"
+</p>
+<a href="http://gamow.odessa.ua/wp-content/uploads/2023/08/Abstracts-2023.pdf" id="id395" class="Link" target="_blank">[PROC] </a>
+<a href="https://www.researchgate.net/publication/372829698_COMPARISON_OF_MAGNETIC_FIELDS_BY_D1_D2_AND_NiI_58929_LIINES_MEASURED_IN_THE_AREAS_OF_THE_SEISMIC_SOURCE_OF_A_POWERFUL_SOLAR_FLARE_AND_IN_A_SUNSPOT_WITHOUT_FLARES" id="id396" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id400" class="DivWithVerticallyCenteredContent">
+<p id="id398" class="Text">
+Lozitska N.I., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id399" class="Text">
+XXIII Gamow International Astronomical Conference, Odessa (Ukraine), August 21 – 25, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth B child">
+<div  class="Div100VW">
+<div id="id410" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id409" class="DivWithVerticallyCenteredContent">
+<img src="media/b.png" title="Category B Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id405" class="DivWithVerticallyCenteredContent">
+<p id="id403" class="Text">
+"Hidden manifestations of the Paschen-Back effect in D1 and D2 lines in the spectrum of a sunspot without flares"
+</p>
+<a href="http://www.astrobulletin.univ.kiev.ua/67_yakovkin/#more-1471" id="id404" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id408" class="DivWithVerticallyCenteredContent">
+<p id="id406" class="Text">
+<u>Yakovkin I.I.</u>, Lozitska N.I., Lozitsky V.G.
+</p>
+<p id="id407" class="Text">
+Bulletin of Taras Shevchenko National University of Kyiv. Astronomy, 67 (1), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id418" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id417" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id413" class="DivWithVerticallyCenteredContent">
+<p id="id411" class="Text">
+"Comparison of magnetic fields by D1, D2 and NiI lines measured in the areas of the seismic source of a powerful solar flare and in a sunspot without flares"
+</p>
+<a href="https://cammac.univ.kiev.ua/book-of-abstracts/" id="id412" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id416" class="DivWithVerticallyCenteredContent">
+<p id="id414" class="Text">
+<u>Yakovkin I.I.</u>, Lozitska N.I., Lozitsky V.G.
+</p>
+<p id="id415" class="Text">
+International Churyumov Readings CAMMAC-2023, Kyiv (Ukraine), October 31 – November 3, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q3 child">
+<div  class="Div100VW">
+<div id="id428" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id427" class="DivWithVerticallyCenteredContent">
+<img src="media/q3.png" title="Q3 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id423" class="DivWithVerticallyCenteredContent">
+<p id="id419" class="Text">
+"Electrically induced orientational instability of the director in a homeotropic nematic liquid crystal cell and its effect on surface plasmon oscillations"
+</p>
+<a href="pdf/2023_yl_plasmons.pdf" id="id420" class="Link" target="_blank">[PDF] </a>
+<a href="https://doi.org/10.1080/01411594.2023.2247130" id="id421" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/371110574_Electrically_induced_orientational_instability_of_the_director_in_a_homeotropic_nematic_liquid_crystal_cell_and_its_effect_on_surface_plasmon_oscillations" id="id422" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id426" class="DivWithVerticallyCenteredContent">
+<p id="id424" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id425" class="Text">
+Phase Transitions, 97 (6), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id437" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id436" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id432" class="DivWithVerticallyCenteredContent">
+<p id="id429" class="Text">
+"Liquid crystal-enabled tunability of Yagi-Uda antenna resonant properties"
+</p>
+<a href="https://doi.org/10.1117/1.JOM.3.4.041203" id="id430" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/374049655_Liquid_crystal-enabled_tunability_of_Yagi-Uda_antenna_resonant_properties" id="id431" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id435" class="DivWithVerticallyCenteredContent">
+<p id="id433" class="Text">
+<u>Yakovkin I.I.</u>, Reshetnyak V.Yu.
+</p>
+<p id="id434" class="Text">
+Journal of Optical Microsystems, 3 (4), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id444" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id443" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id439" class="DivWithVerticallyCenteredContent">
+<p id="id438" class="Text">
+"Tuning of localized surface plasmon resonance in arrays of gold nanospheres by reorientation of liquid crystals"
+</p>
+</div>
+<div id="id442" class="DivWithVerticallyCenteredContent">
+<p id="id440" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F., Reshetnyak V.Yu.
+</p>
+<p id="id441" class="Text">
+20th Optics of Liquid Crystals Conference (OLC 2023), Szczecin (Poland), September 17 – 22, 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id453" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id452" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id448" class="DivWithVerticallyCenteredContent">
+<p id="id445" class="Text">
+"Controlling plasmon resonance of gold and silver nanoparticle arrays with help of liquid crystal"
+</p>
+<a href="https://doi.org/10.3390/photonics10101088" id="id446" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/374279860_Controlling_Plasmon_Resonance_of_Gold_and_Silver_Nanoparticle_Arrays_with_Help_of_Liquid_Crystal" id="id447" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id451" class="DivWithVerticallyCenteredContent">
+<p id="id449" class="Text">
+<u>Yakovkin I.I.</u>, Reshetnyak V.Yu.
+</p>
+<p id="id450" class="Text">
+Photonics, 10 (10), 2023<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q1 child">
+<div  class="Div100VW">
+<div id="id462" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id461" class="DivWithVerticallyCenteredContent">
+<img src="media/q1.png" title="Q1 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id457" class="DivWithVerticallyCenteredContent">
+<p id="id454" class="Text">
+"Unique spectral manifestations around the D3 line observed in the region close to the seismic source of a large solar flare"
+</p>
+<a href="https://doi.org/10.1093/mnrasl/slad163" id="id455" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/375231620_Unique_spectral_manifestations_around_the_D3_line_observed_in_the_region_close_to_the_seismic_source_of_a_large_solar_flare" id="id456" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id460" class="DivWithVerticallyCenteredContent">
+<p id="id458" class="Text">
+Lozitska N.I., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id459" class="Text">
+Monthly Notices of the Royal Astronomical Society Letters, 528 (1), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id470" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id469" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id465" class="DivWithVerticallyCenteredContent">
+<p id="id463" class="Text">
+"Dependence of strong magnetic field measurements in the solar atmosphere on the techniques used"
+</p>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2024/05/BookOfAbstracts-2024.May22.pdf" id="id464" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id468" class="DivWithVerticallyCenteredContent">
+<p id="id466" class="Text">
+Hromov M.A., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id467" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 28 – 31, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id478" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id477" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id473" class="DivWithVerticallyCenteredContent">
+<p id="id471" class="Text">
+"Comparison of magnetic fields and Doppler velocities in an X-class solar flare as measured by D1, D2, D3, H-alpha, and NiI 5892.9 lines"
+</p>
+<a href="http://www.observ.univ.kiev.ua/conference/wp-content/uploads/2024/05/BookOfAbstracts-2024.May22.pdf" id="id472" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id476" class="DivWithVerticallyCenteredContent">
+<p id="id474" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Lozitska N.I.
+</p>
+<p id="id475" class="Text">
+International Conference 'Astronomy and Space Physics', Kyiv (Ukraine), May 28 – 31, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q1 child">
+<div  class="Div100VW">
+<div id="id487" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id486" class="DivWithVerticallyCenteredContent">
+<img src="media/q1.png" title="Q1 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id482" class="DivWithVerticallyCenteredContent">
+<p id="id479" class="Text">
+"Altitude Heterogeneity of Magnetic Fields and Doppler Velocities in the Area of Seismic Source of a Strong Solar Flare from Data in Helium, Sodium, and Nickel Lines"
+</p>
+<a href="https://doi.org/10.3390/universe10060262" id="id480" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/381432515_Altitude_Heterogeneity_of_Magnetic_Fields_and_Doppler_Velocities_in_the_Area_of_Seismic_Source_of_a_Strong_Solar_Flare_from_Data_in_Helium_Sodium_and_Nickel_Lines" id="id481" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id485" class="DivWithVerticallyCenteredContent">
+<p id="id483" class="Text">
+<u>Yakovkin I.I.</u>, Lozitska N.I., Lozitsky V.G.
+</p>
+<p id="id484" class="Text">
+Universe, 10 (6), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id495" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id494" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id490" class="DivWithVerticallyCenteredContent">
+<p id="id488" class="Text">
+"Comparison of magnetic field measurements in a sunspot using spectral lines with different Lande factors and formation height in atmosphere"
+</p>
+<a href="https://gamow.odessa.ua/wp-content/uploads/2024/09/Abstracts-2024_and_Program.pdf" id="id489" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id493" class="DivWithVerticallyCenteredContent">
+<p id="id491" class="Text">
+Lozitska N.I., Hromov M.A., <u>Yakovkin I.I.</u>, Lozitsky V.G.
+</p>
+<p id="id492" class="Text">
+XXIV Gamow International Astronomical Conference, Odessa (Ukraine), August 19 – 23, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q4 child">
+<div  class="Div100VW">
+<div id="id503" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id502" class="DivWithVerticallyCenteredContent">
+<img src="media/q4.png" title="Q4 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id498" class="DivWithVerticallyCenteredContent">
+<p id="id496" class="Text">
+"Comparison of direct magnetic field measurements in a sunspot by spectral lines of Fe I, Fe II and Ti I"
+</p>
+<a href="https://doi.org/10.3103/S0884591324060047" id="id497" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id501" class="DivWithVerticallyCenteredContent">
+<p id="id499" class="Text">
+Lozitska N.I., <u>Yakovkin I.I.</u>, Lozitsky V.G., Hromov M.A.
+</p>
+<p id="id500" class="Text">
+Kinematics and Physics of Celestial Bodies, 40 (6), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id512" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id511" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id507" class="DivWithVerticallyCenteredContent">
+<p id="id504" class="Text">
+"Tunable THz absorbers based on LC-tuned Yagi–Uda antennas"
+</p>
+<a href="https://doi.org/10.1080/02678292.2024.2339913" id="id505" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/380185684_Tunable_THz_absorbers_based_on_LC-tuned_Yagi-Uda_antennas" id="id506" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id510" class="DivWithVerticallyCenteredContent">
+<p id="id508" class="Text">
+<u>Yakovkin I.I.</u>, Reshetnyak V.Yu., Bunning T.J., Evans D.R.
+</p>
+<p id="id509" class="Text">
+Liquid crystals, 51 (13), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id521" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id520" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id516" class="DivWithVerticallyCenteredContent">
+<p id="id513" class="Text">
+"Modeling of laser generation in a Fabry-Perot-Tamm structure with a nematic liquid crystal layer"
+</p>
+<a href="https://doi.org/10.1063/5.0208565" id="id514" class="Link" target="_blank">[DOI] </a>
+<a href="https://www.researchgate.net/publication/381203329_Modeling_of_laser_generation_in_a_Fabry-Perot-Tamm_structure_with_a_nematic_liquid_crystal_layer" id="id515" class="Link" target="_blank">[RG] </a>
+</div>
+<div id="id519" class="DivWithVerticallyCenteredContent">
+<p id="id517" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F., Reshetnyak V.Yu., Pakamoryte I., Hands P.J.W.
+</p>
+<p id="id518" class="Text">
+Journal of Applied Physics, 135 (21), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id528" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id527" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id523" class="DivWithVerticallyCenteredContent">
+<p id="id522" class="Text">
+"Electro-optic tuning of Terahertz Yagi-Uda antenna arrays through liquid crystal reorientation"
+</p>
+</div>
+<div id="id526" class="DivWithVerticallyCenteredContent">
+<p id="id524" class="Text">
+<u>Yakovkin I.I.</u>, Reshetnyak V.Yu., Evans D.R., Bunning T.J.
+</p>
+<p id="id525" class="Text">
+SPIE Photonics Europe, Strasbourg (France), April 7 – 11, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id536" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id535" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id531" class="DivWithVerticallyCenteredContent">
+<p id="id529" class="Text">
+"Laser generation in a Tamm plasmon structure controlled by a nematic liquid crystal"
+</p>
+<a href="https://spie.org/photonics-europe/presentation/Laser-generation-in-a-Tamm-plasmon-structure-controlled-by-a/13016-59" id="id530" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id534" class="DivWithVerticallyCenteredContent">
+<p id="id532" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F., Reshetnyak V.Yu., Pakamoryte I., Hands P.J.W.
+</p>
+<p id="id533" class="Text">
+SPIE Photonics Europe, Strasbourg (France), April 7 – 11, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q3 child">
+<div  class="Div100VW">
+<div id="id544" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id543" class="DivWithVerticallyCenteredContent">
+<img src="media/q3.png" title="Q3 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id539" class="DivWithVerticallyCenteredContent">
+<p id="id537" class="Text">
+"Electrocontrol over Surface Plasmon Oscillations in a Homeotropic Nematic Liquid Crystal Cell"
+</p>
+<a href="https://doi.org/10.15407/ujpe69.6.417" id="id538" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id542" class="DivWithVerticallyCenteredContent">
+<p id="id540" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id541" class="Text">
+Ukrainian Journal of Physics, 69 (6), 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id552" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id551" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id547" class="DivWithVerticallyCenteredContent">
+<p id="id545" class="Text">
+"Controlling reflection and absorption of antennae array in THz using liquid crystals and liquid crystal elastomers"
+</p>
+<a href="https://ilcc2024.com/program/" id="id546" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id550" class="DivWithVerticallyCenteredContent">
+<p id="id548" class="Text">
+<u>Yakovkin I.I.</u>, Reshetnyak V.Yu., Gleeson H.F., Bunning T.J., Evans D.R.
+</p>
+<p id="id549" class="Text">
+29th International Liquid Crystal Conference (ILCC 2024), Rio de Janeiro (Brazil), July 21 – 26, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth IC child">
+<div  class="Div100VW">
+<div id="id560" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id559" class="DivWithVerticallyCenteredContent">
+<img src="media/int.png" title="International Conference"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id555" class="DivWithVerticallyCenteredContent">
+<p id="id553" class="Text">
+"Modeling the kinetics of auto-oscillations in a nematic liquid crystal cell with photoaligning in an azo-dye layer on a substrate"
+</p>
+<a href="https://sciforum.net/paper/view/18238" id="id554" class="Link" target="_blank">[PROC] </a>
+</div>
+<div id="id558" class="DivWithVerticallyCenteredContent">
+<p id="id556" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F., Nych A.B.
+</p>
+<p id="id557" class="Text">
+The 4th International Online Conference on Crystals (IOCC2024), Basel (Switzerland), September 18 – 20, 2024<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q1 child">
+<div  class="Div100VW">
+<div id="id568" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id567" class="DivWithVerticallyCenteredContent">
+<img src="media/q1.png" title="Q1 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id563" class="DivWithVerticallyCenteredContent">
+<p id="id561" class="Text">
+"Comparison of magnetic fields and Doppler velocities in an X-class solar flare as measured by D1, D2, D3, Hα, and NiI 5892.9 lines"
+</p>
+<a href="https://doi.org/10.1016/j.asr.2024.08.006" id="id562" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id566" class="DivWithVerticallyCenteredContent">
+<p id="id564" class="Text">
+Lozitsky V.G., <u>Yakovkin I.I.</u>, Lozitska N.I.
+</p>
+<p id="id565" class="Text">
+Advances in Space Research, 75 (1), 2025<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q3 child">
+<div  class="Div100VW">
+<div id="id576" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id575" class="DivWithVerticallyCenteredContent">
+<img src="media/q3.png" title="Q3 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id571" class="DivWithVerticallyCenteredContent">
+<p id="id569" class="Text">
+"Machine Learning in Application to Automatic Noise Processing of Solar Spectrograms"
+</p>
+<a href="https://doi.org/10.30970/jps.29.1903" id="id570" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id574" class="DivWithVerticallyCenteredContent">
+<p id="id572" class="Text">
+<u>Yakovkin I.I.</u>, Bartenev A.O., Petrova N.V.
+</p>
+<p id="id573" class="Text">
+Journal of Physical Studies, 29 (1), 2025<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div  class="DivFullWidth Q2 child">
+<div  class="Div100VW">
+<div id="id584" class="Div100VW">
+<div  class="DivWithVerticallyCenteredContent">
+<div  class="TextNumerator">0</div>
+<div id="id583" class="DivWithVerticallyCenteredContent">
+<img src="media/q2.png" title="Q2 Journal"  class="ImgQuartile">
+<div  class="DivWithLeftAdjustedContent">
+<div id="id579" class="DivWithVerticallyCenteredContent">
+<p id="id577" class="Text">
+"Voltage-controlled surface plasmon in a flexoelectric nematic liquid crystal cell"
+</p>
+<a href="https://doi.org/10.1080/02678292.2025.2470121" id="id578" class="Link" target="_blank">[DOI] </a>
+</div>
+<div id="id582" class="DivWithVerticallyCenteredContent">
+<p id="id580" class="Text">
+<u>Yakovkin I.I.</u>, Ledney M.F.
+</p>
+<p id="id581" class="Text">
+Liquid Crystals, 1-15, 2025<br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    function updateTextNumerator() {
+        document.querySelectorAll(".TextNumerator").forEach(textElement => {
+            let parent = textElement;
+            for (let i = 0; i < 4 && parent; i++) {
+                parent = parent.parentElement;
+            }
+
+            if (parent && parent.classList.contains("child")) {
+                let siblings = [...parent.parentElement.children].filter(el => 
+                    el.classList.contains("child") && getComputedStyle(el).display !== "none"
+                );
+                let index = siblings.indexOf(parent) + 1;
+                // backward counting
+                // let index = siblings.length - siblings.indexOf(parent);
+                textElement.textContent = `${index}`;
+            }
+        });
+    }
+    window.onload = function () {
+        updateTextNumerator();
+        window.scrollTo({
+            top: document.body.scrollHeight, 
+            behavior: 'smooth' 
+        });
+    };
+
+    // Run on Checkbox Change
+    document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+        checkbox.addEventListener("change", updateTextNumerator);
+    });
+</script>
+</body>
+</html>

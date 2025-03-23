@@ -1,2 +1,280 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../profile_manipulator.html"></head><body></body></html>
+<html>
+<head><meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display:wght@400&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --vw: calc(min(1140px,100vw*0.95)/100);
+}
+@media only screen and (max-width: 0px){
+    :root{
+        --vw: calc(1vw*0.95);
+    }
+}
+*{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    font-size: calc(2* var(--vw));
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+}
+div{
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}  
+.hidden{
+    display: none !important;
+}
+
+.child:nth-child(2n of .child:not(.hidden)) {
+	background-color: #404040;
+}
+
+.DivFullWidth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#id70 {
+	background-color: #e5e5e5;
+	position: fixed;
+	top: calc(0 * var(--vw));
+}
+
+.DivWithVerticallyCenteredContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#id69 {
+	margin: calc(1 * var(--vw));
+	align-self: flex-start;
+}
+
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id67 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+	text-align: left;
+	text-decoration: underline 0.1vw transparent;
+	transition: text-decoration 500ms;
+}
+
+#id67:hover {
+	text-decoration: underline 0.1vw #888;
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id68 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+}
+
+#id71 {
+	height: calc(5 * var(--vw));
+	width: calc(1 * var(--vw));
+	flex-shrink: 0;
+}
+
+#id77 {
+	padding: calc(2 * var(--vw));
+}
+
+.DivWithHorizontallyCenteredContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#id72 {
+	font-size: calc(3 * var(--vw));
+	margin: calc(2 * var(--vw));
+}
+
+#id76 {
+	gap: calc(1 * var(--vw));
+}
+
+#id73 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+}
+
+#id74 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+}
+
+#id75 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+}
+
+#id84 {
+	padding: calc(2 * var(--vw));
+}
+
+.Div100VW {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: calc(100 * var(--vw));
+}
+
+#id83 {
+	gap: calc(1 * var(--vw));
+}
+
+#id78 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+}
+
+#id79 {
+	font-size: calc(1.2 * var(--vw));
+	text-align: justify;
+}
+
+.DivWithLeftAdjustedContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#id82 {
+	gap: calc(1 * var(--vw));
+}
+
+.Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8899ee;
+	border-color: #8899ee;
+	border-style: solid;
+	border-width: calc(0.2 * var(--vw));
+	border-radius: calc(2 * var(--vw));
+	font-family: Open Sans;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: calc(0.1 * var(--vw));
+}
+
+.Button:hover {
+	color: #fff;
+	border-color: #4d6eaa;
+	background-color: #4d6eaa;
+}
+
+#id80 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id81 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id86 {
+	padding: calc(2 * var(--vw));
+}
+
+#id85 {
+	font-size: calc(1 * var(--vw));
+	text-align: justify;
+}
+
+
+</style>
+</head>
+<body>
+<div id="id70" class="DivFullWidth">
+<div id="id69" class="DivWithVerticallyCenteredContent">
+<a href="../" id="id67" class="Link" >Ivan I. Yakovkin</a>
+<p id="id68" class="Text">
+&nbsp;&rarr; Profile Manipulator
+</p>
+</div>
+</div>
+<div id="id71" class="DivFullWidth">
+
+</div>
+<div id="id77" class="DivFullWidth child">
+<div  class="DivWithHorizontallyCenteredContent">
+<p id="id72" class="Text">
+Profile Manipulator
+</p>
+</div>
+<div  class="DivWithHorizontallyCenteredContent">
+<div id="id76" class="DivWithVerticallyCenteredContent">
+<a href="media/PM0.png" target="_blank"><img src="media/PM0.png" id="id73" ></a>
+<a href="media/PM1.png" target="_blank"><img src="media/PM1.png" id="id74" ></a>
+<a href="media/PM2.png" target="_blank"><img src="media/PM2.png" id="id75" ></a>
+</div>
+</div>
+</div>
+<div id="id84" class="DivFullWidth child">
+<div id="id83" class="Div100VW">
+<p id="id78" class="Text">
+Profile Manipulator is a solution for expedited processing, analysis, and visualization of spectral line profiles. It allows to interactively visualize and process large amounts of spectral data, combine and calculate derivative profiles while keeping track of the measurement errors.
+</p>
+<p id="id79" class="Text">
+Profile Manipulator is distributed under the MIT license and can be obtained using the link below or by contacting the author.<br>Note: Profile Manipulator is distributed without a digital signature, which may cause OS warnings during the first launch. 
+</p>
+<div id="id82" class="DivWithLeftAdjustedContent">
+<a href='media/Profile_manipulator_v0.4.exe.zip' target="_blank"><div id="id80" class="Button Button">Download Profile Manipulator v0.4</div></a>
+<a href='media/Profile_manipulator_v0.5.exe.zip' target="_blank"><div id="id81" class="Button Button">Download Profile Manipulator v0.5</div></a>
+</div>
+</div>
+</div>
+<div id="id86" class="DivFullWidth child">
+<div  class="Div100VW">
+<p id="id85" class="Text">
+Copyright (C) 2023 — 2025, Ivan I. Yakovkin. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Except as contained in this notice, the name of Ivan I. Yakovkin shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from Ivan I. Yakovkin.
+</p>
+</div>
+</div>
+
+</body>
+</html>

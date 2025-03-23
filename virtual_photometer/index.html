@@ -1,2 +1,265 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../virtual_photometer.html"></head><body></body></html>
+<html>
+<head><meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display:wght@400&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --vw: calc(min(1140px,100vw*0.95)/100);
+}
+@media only screen and (max-width: 0px){
+    :root{
+        --vw: calc(1vw*0.95);
+    }
+}
+*{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    font-size: calc(2* var(--vw));
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+}
+div{
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}  
+.hidden{
+    display: none !important;
+}
+
+.child:nth-child(2n of .child:not(.hidden)) {
+	background-color: #404040;
+}
+
+.DivFullWidth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#id613 {
+	background-color: #e5e5e5;
+	position: fixed;
+	top: calc(0 * var(--vw));
+}
+
+.DivWithVerticallyCenteredContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#id612 {
+	margin: calc(1 * var(--vw));
+	align-self: flex-start;
+}
+
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id610 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+	text-align: left;
+	text-decoration: underline 0.1vw transparent;
+	transition: text-decoration 500ms;
+}
+
+#id610:hover {
+	text-decoration: underline 0.1vw #888;
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id611 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+}
+
+#id614 {
+	height: calc(5 * var(--vw));
+	width: calc(1 * var(--vw));
+	flex-shrink: 0;
+}
+
+#id619 {
+	padding: calc(2 * var(--vw));
+}
+
+.DivWithHorizontallyCenteredContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#id615 {
+	font-size: calc(3 * var(--vw));
+	margin: calc(2 * var(--vw));
+}
+
+#id618 {
+	gap: calc(1 * var(--vw));
+}
+
+#id616 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+}
+
+#id617 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+}
+
+#id625 {
+	padding: calc(2 * var(--vw));
+}
+
+.Div100VW {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: calc(100 * var(--vw));
+}
+
+#id624 {
+	gap: calc(1 * var(--vw));
+}
+
+#id620 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+}
+
+#id621 {
+	font-size: calc(1.2 * var(--vw));
+	text-align: justify;
+}
+
+.DivWithLeftAdjustedContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#id623 {
+	gap: calc(1 * var(--vw));
+}
+
+.Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8899ee;
+	border-color: #8899ee;
+	border-style: solid;
+	border-width: calc(0.2 * var(--vw));
+	border-radius: calc(2 * var(--vw));
+	font-family: Open Sans;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: calc(0.1 * var(--vw));
+}
+
+.Button:hover {
+	color: #fff;
+	border-color: #4d6eaa;
+	background-color: #4d6eaa;
+}
+
+#id622 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id627 {
+	padding: calc(2 * var(--vw));
+}
+
+#id626 {
+	font-size: calc(1 * var(--vw));
+	text-align: justify;
+}
+
+
+</style>
+</head>
+<body>
+<div id="id613" class="DivFullWidth">
+<div id="id612" class="DivWithVerticallyCenteredContent">
+<a href="../" id="id610" class="Link" >Ivan I. Yakovkin</a>
+<p id="id611" class="Text">
+&nbsp;&rarr; Virtual Photometer
+</p>
+</div>
+</div>
+<div id="id614" class="DivFullWidth">
+
+</div>
+<div id="id619" class="DivFullWidth child">
+<div  class="DivWithHorizontallyCenteredContent">
+<p id="id615" class="Text">
+Virtual Photometer
+</p>
+</div>
+<div  class="DivWithHorizontallyCenteredContent">
+<div id="id618" class="DivWithVerticallyCenteredContent">
+<a href="media/VP0.png" target="_blank"><img src="media/VP0.png" id="id616" ></a>
+<a href="media/VP1.png" target="_blank"><img src="media/VP1.png" id="id617" ></a>
+</div>
+</div>
+</div>
+<div id="id625" class="DivFullWidth child">
+<div id="id624" class="Div100VW">
+<p id="id620" class="Text">
+Virtual Photometer is a software for precise and semi-automated digitalization of spectral material captured on photo-plates. Virtual Photometer accounts for characteristic curves of both the scanner and the photoemulsion, performs data averaging, noise retraction, precise reference point selection, and many other features. Virtual Photometer provides a powerful graphical user interface, is written in Delphi, and is fully integrated into the data processing routine for the spectra obtained using the Horizontal Solar Telescope at the Astronomical Observatory of the Taras Shevchenko National University of Kyiv.
+</p>
+<p id="id621" class="Text">
+Virtual Photometer is distributed under the MIT license and can be downloaded using the link below. The most recent version of Virtual Photometer can be obtained by contacting the author. Note: Virtual Photometer is distributed without a digital signature, which may cause OS warnings during the first launch. 
+</p>
+<div id="id623" class="DivWithLeftAdjustedContent">
+<a href='media/VPv1.5WP3MIDREDAuto.exe.zip' target="_blank"><div id="id622" class="Button Button">Download Virtual Photometer v1.5 HKRMIDRED AUTO</div></a>
+</div>
+</div>
+</div>
+<div id="id627" class="DivFullWidth child">
+<div  class="Div100VW">
+<p id="id626" class="Text">
+Copyright (C) 2020 — 2025, Ivan I. Yakovkin. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Except as contained in this notice, the name of Ivan I. Yakovkin shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from Ivan I. Yakovkin.
+</p>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,2 +1,285 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=../stat_prism.html"></head><body></body></html>
+<html>
+<head><meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display:wght@400&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --vw: calc(min(1140px,100vw*0.95)/100);
+}
+@media only screen and (max-width: 0px){
+    :root{
+        --vw: calc(1vw*0.95);
+    }
+}
+*{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    font-size: calc(2* var(--vw));
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+}
+div{
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}  
+.hidden{
+    display: none !important;
+}
+
+.child:nth-child(2n of .child:not(.hidden)) {
+	background-color: #404040;
+}
+
+.DivFullWidth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#id586 {
+	background-color: #000;
+}
+
+#id585 {
+	width: calc(100 * var(--vw));
+}
+
+#id592 {
+	padding: calc(2 * var(--vw));
+	background-color: #222;
+}
+
+.DivWithHorizontallyCenteredContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.DivWithVerticallyCenteredContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#id591 {
+	gap: calc(1 * var(--vw));
+}
+
+#id587 {
+	width: calc(24 * var(--vw));
+	height: calc(14.399999999999999 * var(--vw));
+}
+
+#id588 {
+	width: calc(24 * var(--vw));
+	height: calc(14.399999999999999 * var(--vw));
+}
+
+#id589 {
+	width: calc(24 * var(--vw));
+	height: calc(14.399999999999999 * var(--vw));
+}
+
+#id590 {
+	width: calc(24 * var(--vw));
+	height: calc(14.399999999999999 * var(--vw));
+}
+
+#id598 {
+	background-color: #111;
+	padding: calc(2 * var(--vw));
+}
+
+.Div100VW {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: calc(100 * var(--vw));
+}
+
+#id597 {
+	gap: calc(1 * var(--vw));
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id593 {
+	font-size: calc(2 * var(--vw));
+	text-align: justify;
+	color: #eedd88;
+}
+
+#id594 {
+	font-size: calc(2 * var(--vw));
+	text-align: justify;
+	color: #eee;
+}
+
+#id595 {
+	font-size: calc(2 * var(--vw));
+	text-align: justify;
+	color: #eee;
+}
+
+#id596 {
+	font-size: calc(2 * var(--vw));
+	text-align: justify;
+	color: #eee;
+}
+
+#id607 {
+	padding: calc(2 * var(--vw));
+	background-color: #222;
+}
+
+#id606 {
+	gap: calc(1 * var(--vw));
+}
+
+.DivWithLeftAdjustedContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#id603 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id599 {
+	font-size: calc(1.5 * var(--vw));
+}
+
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id600 {
+	color: #bcf;
+	font-size: calc(1.5 * var(--vw));
+}
+
+#id601 {
+	font-size: calc(1.5 * var(--vw));
+}
+
+#id602 {
+	font-size: calc(1.5 * var(--vw));
+}
+
+#id604 {
+	font-size: calc(1.5 * var(--vw));
+}
+
+#id605 {
+	font-size: calc(1.2 * var(--vw));
+	text-align: justify;
+	background-color: #444;
+	padding: calc(1 * var(--vw));
+}
+
+#id609 {
+	padding: calc(2 * var(--vw));
+	background-color: #111;
+}
+
+#id608 {
+	font-size: calc(1 * var(--vw));
+	text-align: justify;
+}
+
+
+</style>
+</head>
+<body>
+<div id="id586" class="DivFullWidth">
+<img src="media/SPbanner.png" id="id585" >
+</div>
+<div id="id592" class="DivFullWidth child">
+<div  class="DivWithHorizontallyCenteredContent">
+<div id="id591" class="DivWithVerticallyCenteredContent">
+<a href="media/SP0.png" target="_blank"><img src="media/SP0.png" id="id587" ></a>
+<a href="media/SP1.png" target="_blank"><img src="media/SP1.png" id="id588" ></a>
+<a href="media/SP2.png" target="_blank"><img src="media/SP2.png" id="id589" ></a>
+<a href="media/SP3.png" target="_blank"><img src="media/SP3.png" id="id590" ></a>
+</div>
+</div>
+</div>
+<div id="id598" class="DivFullWidth">
+<div id="id597" class="Div100VW">
+<p id="id593" class="Text">
+StatPrism — a statistical software targeting the scientists and students of Psychological and Sociological sciences
+</p>
+<p id="id594" class="Text">
+&bullet; Intuitive Data Analysis — StatPrism simplifies and automates complex data cleaning and analysis tasks.
+</p>
+<p id="id595" class="Text">
+&bullet; Interactive Plots — StatPrism produces high-quality fully customizeable plots, which can be directly used in scientific articles without further modifications.
+</p>
+<p id="id596" class="Text">
+&bullet; Analytical, Visual, and Verbal reports — StatPrism provides analytical (tables), visual (plots), and verbal (plain text) forms of data analysis results. The results in StatPrism are automatically converted to the APA format, simplifying and automating the process of writing the article.
+</p>
+</div>
+</div>
+<div id="id607" class="DivFullWidth child">
+<div id="id606" class="Div100VW">
+<div id="id603" class="DivWithLeftAdjustedContent">
+<p id="id599" class="Text">
+For obtaining StatPrism, please contact StatPrism Team:
+</p>
+<div  class="DivWithVerticallyCenteredContent">
+<a href="../" id="id600" class="Link" >Ivan Yakovkin</a>
+<p id="id601" class="Text">
+&nbsp;— Software Development
+</p>
+</div>
+<p id="id602" class="Text">
+Alexandra Balashevych — Model Design
+</p>
+</div>
+<p id="id604" class="Text">
+If used in research, please cite StatPrism as:
+</p>
+<p id="id605" class="Text">
+I. I. Yakovkin, A. K. Balashevych. The StatPrism Project (2024). StatPrism (Version 0.6) [Computer Software]. Retrieved from https://www.yakovkinii.com/stat_prism/
+</p>
+</div>
+</div>
+<div id="id609" class="DivFullWidth child">
+<div  class="Div100VW">
+<p id="id608" class="Text">
+Copyright (C) 2023 — 2025, StatPrism Team. All rights reserved. THE SOFTWARE IS IN ALPHA PHASE AND MAY CONTAIN BUGS AND ERRORS. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+</p>
+</div>
+</div>
+
+</body>
+</html>
