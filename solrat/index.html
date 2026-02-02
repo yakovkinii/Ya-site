@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+<title>SolRaT</title>
+<meta name="description" content="SolRaT is a non-LTE forward modeling code for radiative transfer in stellar astrophysics.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display:wght@400&display=swap" rel="stylesheet">
+<link rel="icon" href="../media/logo.png" type="image/png">
+<style>
+
+:root{
+    --vw: calc(min(1140px,100vw*0.95)/100);
+}
+@media only screen and (max-width: 0px){
+    :root{
+        --vw: calc(1vw*0.95);
+    }
+}
+*{ 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+    font-size: calc(2* var(--vw));
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444444;
+}
+div{
+    display: flow-root;
+}
+a{
+    text-decoration: none;
+    color: lightblue;
+}  
+.hidden{
+    display: none !important;
+}
+
+.child:nth-child(2n of .child:not(.hidden)) {
+	background-color: #404040;
+}
+
+.DivFullWidth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+#id694 {
+	background-color: #e5e5e5;
+	position: fixed;
+	top: calc(0 * var(--vw));
+}
+
+.DivWithVerticallyCenteredContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#id693 {
+	margin: calc(1 * var(--vw));
+	align-self: flex-start;
+}
+
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id691 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+	text-align: left;
+	text-decoration: underline 0.1vw transparent;
+	transition: text-decoration 500ms;
+}
+
+#id691:hover {
+	text-decoration: underline 0.1vw #888;
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id692 {
+	font-size: calc(1.5 * var(--vw));
+	color: #555;
+}
+
+#id695 {
+	height: calc(5 * var(--vw));
+	width: calc(1 * var(--vw));
+	flex-shrink: 0;
+}
+
+#id697 {
+	padding: calc(2 * var(--vw));
+}
+
+.DivWithHorizontallyCenteredContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#id696 {
+	font-size: calc(3 * var(--vw));
+	margin: calc(2 * var(--vw));
+}
+
+#id702 {
+	padding: calc(2 * var(--vw));
+}
+
+.Div100VW {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: calc(100 * var(--vw));
+}
+
+#id701 {
+	gap: calc(1 * var(--vw));
+}
+
+#id698 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+}
+
+.DivWithLeftAdjustedContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#id700 {
+	gap: calc(1 * var(--vw));
+}
+
+.Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8899ee;
+	border-color: #8899ee;
+	border-style: solid;
+	border-width: calc(0.2 * var(--vw));
+	border-radius: calc(2 * var(--vw));
+	font-family: Open Sans;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: calc(0.1 * var(--vw));
+}
+
+.Button:hover {
+	color: #fff;
+	border-color: #4d6eaa;
+	background-color: #4d6eaa;
+}
+
+#id699 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id704 {
+	padding: calc(2 * var(--vw));
+}
+
+#id703 {
+	font-size: calc(1 * var(--vw));
+	text-align: justify;
+}
+
+
+</style>
+</head>
+<body>
+<div id="id694" class="DivFullWidth">
+<div id="id693" class="DivWithVerticallyCenteredContent">
+<a href="../" id="id691" class="Link" >Ivan I. Yakovkin</a>
+<p id="id692" class="Text">
+&nbsp;&rarr; SolRaT
+</p>
+</div>
+</div>
+<div id="id695" class="DivFullWidth">
+
+</div>
+<div id="id697" class="DivFullWidth child">
+<div  class="DivWithHorizontallyCenteredContent">
+<p id="id696" class="Text">
+SolRaT
+</p>
+</div>
+<div  class="DivWithHorizontallyCenteredContent">
+
+</div>
+</div>
+<div id="id702" class="DivFullWidth child">
+<div id="id701" class="Div100VW">
+<p id="id698" class="Text">
+SolRaT (<u>Sol</u>ar <u>Ra</u>diative <u>T</u>ransfer) is a forward modeling code, implementing the non-LTE statistical equilibrium and radiative transfer equations within the multi-term atom model.
+</p>
+<div id="id700" class="DivWithLeftAdjustedContent">
+<a href='https://github.com/yakovkinii/SolRaT/tree/master' target="_blank"><div id="id699" class="Button Button">GitHub link</div></a>
+</div>
+</div>
+</div>
+<div id="id704" class="DivFullWidth child">
+<div  class="Div100VW">
+<p id="id703" class="Text">
+Copyright (C) 2023 — 2025, Ivan I. Yakovkin. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL Ivan I. Yakovkin BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Except as contained in this notice, the name of Ivan I. Yakovkin shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from Ivan I. Yakovkin.
+</p>
+</div>
+</div>
+
+</body>
+</html>
