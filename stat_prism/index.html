@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="UTF-8">
 <title>StatPrism</title>
-<meta name="description" content="StatPrism — a statistical software targeting the scientists and students of Psychological and Sociological sciences.">
+<meta name="description" content="StatPrism — point-and-click statistics for psychology and the social sciences: APA-ready tables, customisable figures, and plain-language reports.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@ a{
 }
 
 .child:nth-child(2n of .child:not(.hidden)) {
-	background-color: #404040;
+	background-color: #252525;
 }
 
 .DivFullWidth {
@@ -60,23 +60,10 @@ a{
 	width: 100%;
 }
 
-#id758 {
-	background-color: #001122;
-}
-
-#id757 {
-	width: calc(100 * var(--vw));
-}
-
-#id764 {
-	padding: calc(2 * var(--vw));
-	background-color: #001122;
-}
-
-.DivWithHorizontallyCenteredContent {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#id760 {
+	background-color: #252525;
+	position: fixed;
+	top: calc(0 * var(--vw));
 }
 
 .DivWithVerticallyCenteredContent {
@@ -85,33 +72,57 @@ a{
 	align-items: center;
 }
 
-#id763 {
-	gap: calc(1 * var(--vw));
-}
-
 #id759 {
-	width: calc(24 * var(--vw));
-	height: calc(14.399999999999999 * var(--vw));
+	margin: calc(1 * var(--vw));
+	align-self: flex-start;
 }
 
-#id760 {
-	width: calc(24 * var(--vw));
-	height: calc(14.399999999999999 * var(--vw));
+.Link {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id757 {
+	font-size: calc(1.5 * var(--vw));
+	color: #9a9a93;
+	text-align: left;
+	text-decoration: underline 0.1vw transparent;
+	transition: text-decoration 500ms;
+}
+
+#id757:hover {
+	text-decoration: underline 0.1vw #eedd88;
+}
+
+.Text {
+	font-family: Open Sans;
+	font-size: calc(1.3 * var(--vw));
+	color: white;
+}
+
+#id758 {
+	font-size: calc(1.5 * var(--vw));
+	color: #9a9a93;
 }
 
 #id761 {
-	width: calc(24 * var(--vw));
-	height: calc(14.399999999999999 * var(--vw));
+	height: calc(5 * var(--vw));
+	width: calc(1 * var(--vw));
+	flex-shrink: 0;
+}
+
+#id763 {
+	background-color: #151515;
 }
 
 #id762 {
-	width: calc(24 * var(--vw));
-	height: calc(14.399999999999999 * var(--vw));
+	width: calc(30 * var(--vw));
 }
 
 #id770 {
-	background-color: #001;
 	padding: calc(2 * var(--vw));
+	background-color: #151515;
 }
 
 .Div100VW {
@@ -122,46 +133,107 @@ a{
 }
 
 #id769 {
-	gap: calc(1 * var(--vw));
+	gap: calc(2 * var(--vw));
 }
 
-.Text {
-	font-family: Open Sans;
-	font-size: calc(1.3 * var(--vw));
-	color: white;
+#id764 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: center;
+	color: #e8e6da;
 }
 
-#id765 {
-	font-size: calc(2 * var(--vw));
-	text-align: justify;
-	color: #eedd88;
-}
-
-#id766 {
-	font-size: calc(2 * var(--vw));
-	text-align: justify;
-	color: #eee;
-}
-
-#id767 {
-	font-size: calc(2 * var(--vw));
-	text-align: justify;
-	color: #eee;
+.DivWithHorizontallyCenteredContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #id768 {
-	font-size: calc(2 * var(--vw));
-	text-align: justify;
-	color: #eee;
+	gap: calc(1 * var(--vw));
 }
 
-#id780 {
-	padding: calc(2 * var(--vw));
-	background-color: #001122;
+.Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8899ee;
+	border-color: #8899ee;
+	border-style: solid;
+	border-width: calc(0.2 * var(--vw));
+	border-radius: calc(2 * var(--vw));
+	font-family: Open Sans;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: calc(0.1 * var(--vw));
+}
+
+.Button:hover {
+	color: #fff;
+	border-color: #4d6eaa;
+	background-color: #4d6eaa;
+}
+
+#id765 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id766 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
+}
+
+#id767 {
+	font-size: calc(1.3 * var(--vw));
+	padding-left: calc(1.5 * var(--vw));
+	padding-right: calc(1.5 * var(--vw));
+	padding-top: calc(0.8 * var(--vw));
+	padding-bottom: calc(0.8 * var(--vw));
 }
 
 #id779 {
+	padding: calc(2 * var(--vw));
+	background-color: #252525;
+}
+
+#id778 {
 	gap: calc(1 * var(--vw));
+}
+
+.DivWithTopAdjustedContent {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+#id777 {
+	gap: calc(5 * var(--vw));
+}
+
+#id771 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+	border-width: calc(0.05 * var(--vw));
+	border-style: solid;
+	border-color: #e8e6da33;
+}
+
+.DivWithVerticallySplitContent {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	align-self: stretch;
+	justify-content: space-between;
+}
+
+#id776 {
+	gap: calc(5 * var(--vw));
 }
 
 .DivWithLeftAdjustedContent {
@@ -170,122 +242,374 @@ a{
 	align-items: flex-start;
 }
 
-#id776 {
+#id774 {
 	gap: calc(0.5 * var(--vw));
-}
-
-#id771 {
-	font-size: calc(1.5 * var(--vw));
 }
 
 #id772 {
 	font-size: calc(1.5 * var(--vw));
+	color: #eedd88;
+	margin-bottom: calc(0.5 * var(--vw));
 }
 
 #id773 {
 	font-size: calc(1.5 * var(--vw));
-}
-
-.Link {
-	font-family: Open Sans;
-	font-size: calc(1.3 * var(--vw));
-	color: white;
-}
-
-#id774 {
-	color: #bcf;
-	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+	color: #e8e6da;
 }
 
 #id775 {
-	font-size: calc(1.5 * var(--vw));
+	font-size: calc(1.1 * var(--vw));
+	margin-bottom: calc(1 * var(--vw));
+	color: #9a9a93;
 }
 
-#id777 {
-	font-size: calc(1.5 * var(--vw));
-}
-
-#id778 {
-	font-size: calc(1.2 * var(--vw));
-	text-align: justify;
-	background-color: #112233;
-	padding: calc(1 * var(--vw));
-}
-
-#id782 {
+#id788 {
 	padding: calc(2 * var(--vw));
-	background-color: #111;
+	background-color: #151515;
+}
+
+#id787 {
+	gap: calc(1 * var(--vw));
+}
+
+#id786 {
+	gap: calc(5 * var(--vw));
+}
+
+#id780 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+	border-width: calc(0.05 * var(--vw));
+	border-style: solid;
+	border-color: #e8e6da33;
+}
+
+#id785 {
+	gap: calc(5 * var(--vw));
+}
+
+#id783 {
+	gap: calc(0.5 * var(--vw));
 }
 
 #id781 {
-	font-size: calc(1 * var(--vw));
+	font-size: calc(1.5 * var(--vw));
+	color: #eedd88;
+	margin-bottom: calc(0.5 * var(--vw));
+}
+
+#id782 {
+	font-size: calc(1.5 * var(--vw));
 	text-align: justify;
+	color: #e8e6da;
+}
+
+#id784 {
+	font-size: calc(1.1 * var(--vw));
+	margin-bottom: calc(1 * var(--vw));
+	color: #9a9a93;
+}
+
+#id797 {
+	padding: calc(2 * var(--vw));
+	background-color: #252525;
+}
+
+#id796 {
+	gap: calc(1 * var(--vw));
+}
+
+#id795 {
+	gap: calc(5 * var(--vw));
+}
+
+#id789 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+	border-width: calc(0.05 * var(--vw));
+	border-style: solid;
+	border-color: #e8e6da33;
+}
+
+#id794 {
+	gap: calc(5 * var(--vw));
+}
+
+#id792 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id790 {
+	font-size: calc(1.5 * var(--vw));
+	color: #eedd88;
+	margin-bottom: calc(0.5 * var(--vw));
+}
+
+#id791 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+	color: #e8e6da;
+}
+
+#id793 {
+	font-size: calc(1.1 * var(--vw));
+	margin-bottom: calc(1 * var(--vw));
+	color: #9a9a93;
+}
+
+#id806 {
+	padding: calc(2 * var(--vw));
+	background-color: #151515;
+}
+
+#id805 {
+	gap: calc(1 * var(--vw));
+}
+
+#id804 {
+	gap: calc(5 * var(--vw));
+}
+
+#id798 {
+	width: calc(30 * var(--vw));
+	height: calc(18.0 * var(--vw));
+	border-width: calc(0.05 * var(--vw));
+	border-style: solid;
+	border-color: #e8e6da33;
+}
+
+#id803 {
+	gap: calc(5 * var(--vw));
+}
+
+#id801 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id799 {
+	font-size: calc(1.5 * var(--vw));
+	color: #eedd88;
+	margin-bottom: calc(0.5 * var(--vw));
+}
+
+#id800 {
+	font-size: calc(1.5 * var(--vw));
+	text-align: justify;
+	color: #e8e6da;
+}
+
+#id802 {
+	font-size: calc(1.1 * var(--vw));
+	margin-bottom: calc(1 * var(--vw));
+	color: #9a9a93;
+}
+
+#id816 {
+	padding: calc(2 * var(--vw));
+	background-color: #252525;
+}
+
+#id815 {
+	gap: calc(1 * var(--vw));
+}
+
+#id812 {
+	gap: calc(0.5 * var(--vw));
+}
+
+#id807 {
+	font-size: calc(1.5 * var(--vw));
+	color: #eedd88;
+}
+
+#id808 {
+	font-size: calc(1.5 * var(--vw));
+	color: #e8e6da;
+}
+
+#id809 {
+	font-size: calc(1.5 * var(--vw));
+	color: #e8e6da;
+}
+
+#id810 {
+	color: #eedd88;
+	font-size: calc(1.5 * var(--vw));
+}
+
+#id811 {
+	font-size: calc(1.5 * var(--vw));
+	color: #e8e6da;
+}
+
+#id813 {
+	font-size: calc(1.2 * var(--vw));
+	color: #e8e6da;
+}
+
+#id814 {
+	font-size: calc(1.2 * var(--vw));
+	text-align: justify;
+	color: #e8e6da;
+	background-color: #303030;
+	padding: calc(1 * var(--vw));
+}
+
+#id818 {
+	padding: calc(2 * var(--vw));
+	background-color: #0e0e0e;
+}
+
+#id817 {
+	font-size: calc(1.0 * var(--vw));
+	text-align: justify;
+	color: #9a9a93;
 }
 
 
 </style>
 </head>
 <body>
-<div id="id758" class="DivFullWidth">
-<img src="media/SPbanner_2025.png" id="id757" >
-</div>
-<div id="id764" class="DivFullWidth child">
-<div  class="DivWithHorizontallyCenteredContent">
-<div id="id763" class="DivWithVerticallyCenteredContent">
-<a href="media/SP0.png" target="_blank"><img src="media/SP0.png" id="id759" ></a>
-<a href="media/SP1.png" target="_blank"><img src="media/SP1.png" id="id760" ></a>
-<a href="media/SP2.png" target="_blank"><img src="media/SP2.png" id="id761" ></a>
-<a href="media/SP3.png" target="_blank"><img src="media/SP3.png" id="id762" ></a>
+<div id="id760" class="DivFullWidth">
+<div id="id759" class="DivWithVerticallyCenteredContent">
+<a href="../" id="id757" class="Link" >Ivan I. Yakovkin</a>
+<p id="id758" class="Text">
+&nbsp;&rarr; StatPrism
+</p>
 </div>
 </div>
+<div id="id761" class="DivFullWidth">
+
 </div>
-<div id="id770" class="DivFullWidth">
+<div id="id763" class="DivFullWidth">
+<img src="media/banner.png" id="id762" >
+</div>
+<div id="id770" class="DivFullWidth child">
 <div id="id769" class="Div100VW">
-<p id="id765" class="Text">
-StatPrism — a statistical software targeting the scientists and students of Psychological and Sociological sciences
+<p id="id764" class="Text">
+A desktop application for analysing survey and questionnaire data and turning it into publication-ready tables and figures — built for researchers and students in psychology and the social sciences who want correct statistics without writing code.
 </p>
-<p id="id766" class="Text">
-&bullet; Intuitive Data Analysis — StatPrism simplifies and automates complex data cleaning and analysis tasks.
-</p>
-<p id="id767" class="Text">
-&bullet; Interactive Plots — StatPrism produces high-quality fully customizeable plots, which can be directly used in scientific articles without further modifications.
-</p>
-<p id="id768" class="Text">
-&bullet; Analytical, Visual, and Verbal reports — StatPrism provides analytical (tables), visual (plots), and verbal (plain text) forms of data analysis results. The results in StatPrism are automatically converted to the APA format, simplifying and automating the process of writing the article.
-</p>
+<div  class="DivWithHorizontallyCenteredContent">
+<div id="id768" class="DivWithVerticallyCenteredContent">
+<a href='https://github.com/yakovkinii/stat_prism' target="_blank"><div id="id765" class="Button Button">GitHub Repository</div></a>
+<a href='https://stat-prism.readthedocs.io/en/latest/' target="_blank"><div id="id766" class="Button Button">Documentation</div></a>
+<a href='https://github.com/yakovkinii/stat_prism/releases' target="_blank"><div id="id767" class="Button Button">Downloads</div></a>
 </div>
 </div>
-<div id="id780" class="DivFullWidth child">
-<div id="id779" class="Div100VW">
-<div id="id776" class="DivWithLeftAdjustedContent">
-<p id="id771" class="Text">
-For obtaining StatPrism, please contact StatPrism Team:
-</p>
+</div>
+</div>
+<div id="id779" class="DivFullWidth child">
+<div id="id778" class="Div100VW">
+<div id="id777" class="DivWithTopAdjustedContent">
+<a href="media/hero.png" target="_blank"><img src="media/hero.png" id="id771" ></a>
+<div id="id776" class="DivWithVerticallySplitContent">
+<div id="id774" class="DivWithLeftAdjustedContent">
 <p id="id772" class="Text">
-A. K. Balashevych — Model Specification
+Statistics, start to finish
 </p>
 <p id="id773" class="Text">
-N. V. Petrova — Testing & QA
+StatPrism runs the whole pipeline in one window — import, clean, analyse, and report — and produces publication-ready output: APA-formatted tables, customisable figures, and plain-language interpretations. Point-and-click throughout; nothing to program.
+</p>
+</div>
+<p id="id775" class="Text">
+A finished analysis — tables and a figure, ready for a manuscript.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="id788" class="DivFullWidth child">
+<div id="id787" class="Div100VW">
+<div id="id786" class="DivWithTopAdjustedContent">
+<a href="media/worked-1-import.png" target="_blank"><img src="media/worked-1-import.png" id="id780" ></a>
+<div id="id785" class="DivWithVerticallySplitContent">
+<div id="id783" class="DivWithLeftAdjustedContent">
+<p id="id781" class="Text">
+1 · Import your responses
+</p>
+<p id="id782" class="Text">
+Open a response export — a Google Forms spreadsheet, Excel, or CSV. StatPrism reads it directly, detects each variable's type (numeric, ordinal, nominal), and keeps your value labels intact, so you can start working straight away.
+</p>
+</div>
+<p id="id784" class="Text">
+Importing a questionnaire export.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="id797" class="DivFullWidth child">
+<div id="id796" class="Div100VW">
+<div id="id795" class="DivWithTopAdjustedContent">
+<a href="media/worked-2-clean.png" target="_blank"><img src="media/worked-2-clean.png" id="id789" ></a>
+<div id="id794" class="DivWithVerticallySplitContent">
+<div id="id792" class="DivWithLeftAdjustedContent">
+<p id="id790" class="Text">
+2 · Clean and reshape
+</p>
+<p id="id791" class="Text">
+Prepare the data with point-and-click steps — no syntax. Remove duplicate or straightlined responses, flag multivariate outliers, reverse-score items and build scale scores, one-hot encode categories, and filter or recode as needed. Every step is a card you can revisit and re-run.
+</p>
+</div>
+<p id="id793" class="Text">
+Point-and-click data-processing steps.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="id806" class="DivFullWidth child">
+<div id="id805" class="Div100VW">
+<div id="id804" class="DivWithTopAdjustedContent">
+<a href="media/worked-3-analyse.png" target="_blank"><img src="media/worked-3-analyse.png" id="id798" ></a>
+<div id="id803" class="DivWithVerticallySplitContent">
+<div id="id801" class="DivWithLeftAdjustedContent">
+<p id="id799" class="Text">
+3 · Analyse and report
+</p>
+<p id="id800" class="Text">
+Run the analysis you need — from descriptives, t-tests, ANOVA and correlations to regression (with moderation and mediation), reliability (Cronbach's &alpha; and McDonald's &omega;), exploratory and confirmatory factor analysis, and structural equation modelling. Results come as APA-formatted tables, fully customisable figures — including factor-structure and mediation path diagrams — and an optional plain-language report, all ready to copy straight into Word.
+</p>
+</div>
+<p id="id802" class="Text">
+A fitted analysis with its APA table and figure.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="id816" class="DivFullWidth child">
+<div id="id815" class="Div100VW">
+<div id="id812" class="DivWithLeftAdjustedContent">
+<p id="id807" class="Text">
+StatPrism Team:
+</p>
+<p id="id808" class="Text">
+A. K. Balashevych — Model Specification
+</p>
+<p id="id809" class="Text">
+N. V. Petrova — Testing &amp; QA
 </p>
 <div  class="DivWithVerticallyCenteredContent">
-<a href="../" id="id774" class="Link" >I. I. Yakovkin</a>
-<p id="id775" class="Text">
-&nbsp;— Software Development & PM
+<a href="../" id="id810" class="Link" >I. I. Yakovkin</a>
+<p id="id811" class="Text">
+&nbsp;— Software Development &amp; PM
 </p>
 </div>
 </div>
-<p id="id777" class="Text">
+<p id="id813" class="Text">
 If used in research, please cite StatPrism as:
 </p>
-<p id="id778" class="Text">
-Balashevych A. K., Petrova N.V., Yakovkin I. I. The StatPrism Project (2024). StatPrism (Version 0.6) [Computer Software]. Retrieved from https://www.yakovkinii.com/stat_prism/
+<p id="id814" class="Text">
+Balashevych A. K., Petrova N. V., Yakovkin I. I. (2025). StatPrism [Computer software]. Retrieved from https://github.com/yakovkinii/stat_prism
 </p>
 </div>
 </div>
-<div id="id782" class="DivFullWidth child">
+<div id="id818" class="DivFullWidth child">
 <div  class="Div100VW">
-<p id="id781" class="Text">
-Copyright (C) 2023 — 2026, StatPrism Team. All rights reserved. THE SOFTWARE IS IN ALPHA PHASE AND MAY CONTAIN BUGS AND ERRORS. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+<p id="id817" class="Text">
+Copyright (C) 2023 — 2026, StatPrism Team. StatPrism is free software, licensed under the GNU General Public License v3.0 or later. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 </p>
 </div>
 </div>
